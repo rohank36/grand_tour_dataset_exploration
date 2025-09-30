@@ -1,0 +1,3661 @@
+Zarr group:  adis_imu
+
+Data Fields
+
+Accessing Data for `ang_vel`:
+    - shape:  (84012, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-0.00073495 -0.00047392 -0.00102069]  for idx [0]
+
+Accessing Data for `ang_vel_cov`:
+    - shape:  (84012, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[2.09297367e-07 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 2.09297367e-07 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 2.09297367e-07]]  for idx [0]
+
+Accessing Data for `lin_acc`:
+    - shape:  (84012, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0.04860438 0.15203792 9.68292087]  for idx [0]
+
+Accessing Data for `lin_acc_cov`:
+    - shape:  (84012, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0.66450853 0.         0.        ]
+ [0.         0.66450853 0.        ]
+ [0.         0.         0.66450853]]  for idx [0]
+
+Accessing Data for `orien_cov`:
+    - shape:  (84012, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[-1.  0.  0.]
+ [ 0.  0.  0.]
+ [ 0.  0.  0.]]  for idx [0]
+
+Accessing Data for `orien`:
+    - shape:  (84012, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 0.]  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (84012,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776101.9988043  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (84012,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  500598  for idx [0]
+
+Attributes:
+    - description:      Analog Devices ADIS16475-2 200Hz
+    - frame_id:      adis16475_imu
+    - topic:      adis_imu
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'adis16475_imu', 'rotation': {'w': 0.005251232714324072, 'x': 0.7046754024829419, 'y': -0.7094799413019802, 'z': -0.006573779782016809}, 'translation': {'x': -0.015846751421098565, 'y': 0.19322607669094574, 'z': 0.07956850717224997}}
+--------------------------------------------
+
+Zarr group:  alphasense_front_center
+
+Data Fields
+
+Accessing Data for `sequence_id`:
+    - shape:  (4315,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  19968  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (4315,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776101.9499006  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [-0.0385234391527932, -0.006412522405808069, 0.00607744610815908, -0.002388499938007876], 'K': [700.3894350332721, 0.0, 682.8896513142247, 0.0, 700.1313839578163, 523.1354161020042, 0.0, 0.0, 1.0], 'P': [700.3894350332721, 0.0, 682.8896513142247, 0.0, 0.0, 700.1313839578163, 523.1354161020042, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'equidistant', 'frame_id': 'alphasense_front_center', 'height': 1080, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 1440}
+    - description:      10Hz - 1440x1080 - Sevensense Alphasense/CoreResearch front center (Sony IMX-273, Color, 1.6MP)
+    - frame_id:      alphasense_front_center
+    - topic:      alphasense_front_center
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'alphasense_front_center', 'rotation': {'w': 0.541225186106887, 'x': -0.45494336062045815, 'y': -0.4544944669145965, 'z': -0.5417901956430607}, 'translation': {'x': 0.04600713143181777, 'y': -0.0032140911178705073, 'z': -0.3751986320280252}}
+--------------------------------------------
+
+Zarr group:  alphasense_front_left
+
+Data Fields
+
+Accessing Data for `timestamp`:
+    - shape:  (4316,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776101.8499012  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (4316,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  19966  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [-0.03843622792783702, -0.002634177248264113, 0.002422949539367233, -0.001382691294699419], 'K': [701.4545727023193, 0.0, 680.2585465191044, 0.0, 700.1179107526791, 537.6794158094971, 0.0, 0.0, 1.0], 'P': [701.4545727023193, 0.0, 680.2585465191044, 0.0, 0.0, 700.1179107526791, 537.6794158094971, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'equidistant', 'frame_id': 'alphasense_front_left', 'height': 1080, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 1440}
+    - description:      10Hz - 1440x1080 - Sevensense Alphasense/CoreResearch front left (Sony IMX-273, Mono, 1.6MP)
+    - frame_id:      alphasense_front_left
+    - topic:      alphasense_front_left
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'alphasense_front_left', 'rotation': {'w': 0.5368758638762299, 'x': -0.45974498896225247, 'y': -0.45019665401233916, 'z': -0.5456389141431761}, 'translation': {'x': 0.10008743117500188, 'y': -0.005044106160423112, 'z': -0.3759478344493785}}
+--------------------------------------------
+
+Zarr group:  alphasense_front_right
+
+Data Fields
+
+Accessing Data for `timestamp`:
+    - shape:  (4317,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776101.8499012  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (4317,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  19961  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [-0.04459393782932651, 0.01237852934390858, -0.01313451092983728, 0.003895777285135927], 'K': [701.6656970672693, 0.0, 675.8628766265481, 0.0, 700.8504216642683, 534.6583586732144, 0.0, 0.0, 1.0], 'P': [701.6656970672693, 0.0, 675.8628766265481, 0.0, 0.0, 700.8504216642683, 534.6583586732144, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'equidistant', 'frame_id': 'alphasense_front_right', 'height': 1080, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 1440}
+    - description:      10Hz - 1440x1080 - Sevensense Alphasense/CoreResearch front right (Sony IMX-273, Mono, 1.6MP)
+    - frame_id:      alphasense_front_right
+    - topic:      alphasense_front_right
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'alphasense_front_right', 'rotation': {'w': 0.5415552717416523, 'x': -0.45428021832487614, 'y': -0.45594501981218066, 'z': -0.5407971059426985}, 'translation': {'x': -0.008591409149567839, 'y': -0.004939215486247553, 'z': -0.3747769505103547}}
+--------------------------------------------
+
+Zarr group:  alphasense_imu
+
+Data Fields
+
+Accessing Data for `ang_vel`:
+    - shape:  (86300, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-0.00724402 -0.00426119  0.00340895]  for idx [0]
+
+Accessing Data for `ang_vel_cov`:
+    - shape:  (86300, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[8.16316965e-06 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 8.16316965e-06 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 8.16316965e-06]]  for idx [0]
+
+Accessing Data for `lin_acc`:
+    - shape:  (86300, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [ 0.2466748  -0.06914551 -9.5819165 ]  for idx [0]
+
+Accessing Data for `orien_cov`:
+    - shape:  (86300, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `orien`:
+    - shape:  (86300, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 0.]  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (86300,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776101.9944692  for idx [0]
+
+Accessing Data for `lin_acc_cov`:
+    - shape:  (86300, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0.00031721 0.         0.        ]
+ [0.         0.00031721 0.        ]
+ [0.         0.         0.00031721]]  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (86300,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  399146  for idx [0]
+
+Attributes:
+    - description:      Bosch BMI085 200Hz (Integrated in Sevensense CoreResearch/Alphasense camera unit)
+    - frame_id:      alphasense_imu
+    - topic:      alphasense_imu
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'alphasense_imu', 'rotation': {'w': 0.9992675697949326, 'x': -0.00720142304148732, 'y': -0.036738890418011295, 'z': -0.007919431365965667}, 'translation': {'x': -0.3022307436356707, 'y': 0.061798150722505, 'z': -0.08410765585489798}}
+--------------------------------------------
+
+Zarr group:  alphasense_left
+
+Data Fields
+
+Accessing Data for `sequence_id`:
+    - shape:  (4315,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  19962  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (4315,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776101.8499012  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [-0.04153221153112917, -0.001458244747164001, 0.002246288862899356, -0.00119721270298716], 'K': [700.8972615106184, 0.0, 706.2319041225614, 0.0, 701.0200085909775, 525.8760223159921, 0.0, 0.0, 1.0], 'P': [700.8972615106184, 0.0, 706.2319041225614, 0.0, 0.0, 701.0200085909775, 525.8760223159921, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'equidistant', 'frame_id': 'alphasense_left', 'height': 1080, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 1440}
+    - description:      10Hz - 1440x1080 - Sevensense Alphasense/CoreResearch left (Sony IMX-273, Color, 1.6MP)
+    - frame_id:      alphasense_left
+    - topic:      alphasense_left
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'alphasense_left', 'rotation': {'w': 0.7629309956447421, 'x': -0.6464698403272188, 'y': 0.0035455747661431447, 'z': 0.0006858071159475156}, 'translation': {'x': -0.2991991707202636, 'y': -0.040493099699673664, 'z': -0.15557014858322163}}
+--------------------------------------------
+
+Zarr group:  alphasense_right
+
+Data Fields
+
+Accessing Data for `timestamp`:
+    - shape:  (4315,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776101.8499012  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (4315,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  19960  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [-0.0412338408417994, 0.004285261971427854, -0.005208088628229656, 0.001463833354868288], 'K': [697.11736829549, 0.0, 750.1699243236521, 0.0, 697.2298815427183, 553.3557744884637, 0.0, 0.0, 1.0], 'P': [697.11736829549, 0.0, 750.1699243236521, 0.0, 0.0, 697.2298815427183, 553.3557744884637, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'equidistant', 'frame_id': 'alphasense_right', 'height': 1080, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 1440}
+    - description:      10Hz - 1440x1080 - Sevensense Alphasense/CoreResearch right (Sony IMX-273, Color, 1.6MP)
+    - frame_id:      alphasense_right
+    - topic:      alphasense_right
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'alphasense_right', 'rotation': {'w': 0.0024233744493068338, 'x': 0.007051890013999862, 'y': -0.6356317567377696, 'z': -0.7719563899145896}, 'translation': {'x': 0.3005096713964913, 'y': -0.05350472559028527, 'z': -0.06790435993644765}}
+--------------------------------------------
+
+Zarr group:  anymal_command_twist
+
+Data Fields
+
+Accessing Data for `angular`:
+    - shape:  (5739, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (5739,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  9609  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (5739,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776107.42612  for idx [0]
+
+Accessing Data for `linear`:
+    - shape:  (5739, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0.07103976 0.         0.        ]  for idx [0]
+
+Attributes:
+    - description:      Operator-issued twist command for ANYmal D.
+    - frame_id:      
+    - topic:      anymal_command_twist
+--------------------------------------------
+
+Zarr group:  anymal_imu
+
+Data Fields
+
+Accessing Data for `orien_cov`:
+    - shape:  (173529, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (173529,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.0004063  for idx [0]
+
+Accessing Data for `ang_vel_cov`:
+    - shape:  (173529, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `lin_acc`:
+    - shape:  (173529, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [ 0.14115741  0.0116971  -9.88249543]  for idx [0]
+
+Accessing Data for `lin_acc_cov`:
+    - shape:  (173529, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `orien`:
+    - shape:  (173529, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 1.]  for idx [0]
+
+Accessing Data for `ang_vel`:
+    - shape:  (173529, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [ 0.00041595 -0.00064817  0.00064881]  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (173529,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  650125  for idx [0]
+
+Attributes:
+    - description:      Epsoon 400HZ (integrated in ANYbotics ANYmal D)
+    - frame_id:      anymal_imu
+    - topic:      anymal_imu
+    - transform:      {'base_frame_id': 'base', 'child_frame_id': 'anymal_imu', 'rotation': {'w': 3.749399456654644e-33, 'x': -6.123233995736766e-17, 'y': -1.0, 'z': -6.123233995736766e-17}, 'translation': {'x': -0.25565, 'y': -0.0025499999999999785, 'z': 0.07672}}
+--------------------------------------------
+
+Zarr group:  anymal_state_actuator
+
+Data Fields
+
+Accessing Data for `00_command_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `00_command_mode`:
+    - shape:  (173318,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  13  for idx [0]
+
+Accessing Data for `00_command_pid_gains_d`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.1  for idx [0]
+
+Accessing Data for `00_command_pid_gains_i`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `00_command_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.008181681789434165  for idx [0]
+
+Accessing Data for `00_command_pid_gains_p`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  8.0  for idx [0]
+
+Accessing Data for `00_command_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -27.63654965018413  for idx [0]
+
+Accessing Data for `00_command_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.00010236094058055591  for idx [0]
+
+Accessing Data for `00_state_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -7.972820281982422  for idx [0]
+
+Accessing Data for `00_state_gear_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.06157495081424713  for idx [0]
+
+Accessing Data for `00_state_gear_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.0036934281043913345  for idx [0]
+
+Accessing Data for `00_state_joint_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.08314655721187592  for idx [0]
+
+Accessing Data for `00_state_joint_acceleration`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -9.817969948332944e-05  for idx [0]
+
+Accessing Data for `00_state_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -28.244319915771484  for idx [0]
+
+Accessing Data for `00_state_imu_lin_acc_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `00_state_joint_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  5.869745281346005e-46  for idx [0]
+
+Accessing Data for `00_state_imu_orien`:
+    - shape:  (173318, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 1.]  for idx [0]
+
+Accessing Data for `00_state_imu_ang_vel_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `00_state_imu_lin_acc`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `01_command_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  20.172480835966912  for idx [0]
+
+Accessing Data for `01_command_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `00_state_imu_ang_vel`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `01_command_mode`:
+    - shape:  (173318,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  13  for idx [0]
+
+Accessing Data for `01_command_pid_gains_d`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.1  for idx [0]
+
+Accessing Data for `01_command_pid_gains_i`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `00_state_imu_orien_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `01_command_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.5319041420765156  for idx [0]
+
+Accessing Data for `01_command_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.0009547163045791337  for idx [0]
+
+Accessing Data for `01_command_pid_gains_p`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  8.0  for idx [0]
+
+Accessing Data for `01_state_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  5.868310451507568  for idx [0]
+
+Accessing Data for `00_state_statusword`:
+    - shape:  (173318,)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  215  for idx [0]
+
+Accessing Data for `01_state_imu_ang_vel_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `01_state_gear_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.4729694426059723  for idx [0]
+
+Accessing Data for `01_state_gear_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  7.559566695820078e-06  for idx [0]
+
+Accessing Data for `01_state_imu_lin_acc`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `01_state_imu_ang_vel`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `01_state_imu_lin_acc_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `01_state_imu_orien`:
+    - shape:  (173318, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 1.]  for idx [0]
+
+Accessing Data for `01_state_imu_orien_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `01_state_joint_acceleration`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1.618193728073575e-05  for idx [0]
+
+Accessing Data for `01_state_joint_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.45758169889450073  for idx [0]
+
+Accessing Data for `01_state_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  20.69269371032715  for idx [0]
+
+Accessing Data for `01_state_joint_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  5.869745281346005e-46  for idx [0]
+
+Accessing Data for `01_state_statusword`:
+    - shape:  (173318,)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  215  for idx [0]
+
+Accessing Data for `02_command_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  38.38885289543909  for idx [0]
+
+Accessing Data for `02_command_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `02_command_mode`:
+    - shape:  (173318,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  13  for idx [0]
+
+Accessing Data for `02_command_pid_gains_d`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.1  for idx [0]
+
+Accessing Data for `02_command_pid_gains_i`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `02_command_pid_gains_p`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  6.0  for idx [0]
+
+Accessing Data for `02_command_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0031827935967542785  for idx [0]
+
+Accessing Data for `02_state_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  11.717212677001953  for idx [0]
+
+Accessing Data for `02_command_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -1.0075324833619597  for idx [0]
+
+Accessing Data for `02_state_imu_ang_vel`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `02_state_gear_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.8719242811203003  for idx [0]
+
+Accessing Data for `02_state_imu_lin_acc`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `02_state_gear_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.0034649546302207308  for idx [0]
+
+Accessing Data for `02_state_imu_lin_acc_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `02_state_imu_ang_vel_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `02_state_imu_orien`:
+    - shape:  (173318, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 1.]  for idx [0]
+
+Accessing Data for `02_state_joint_acceleration`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.013593032197495032  for idx [0]
+
+Accessing Data for `02_state_imu_orien_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `02_state_joint_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.8998715281486511  for idx [0]
+
+Accessing Data for `02_state_joint_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.006383191807084104  for idx [0]
+
+Accessing Data for `02_state_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  37.43635559082031  for idx [0]
+
+Accessing Data for `03_command_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `02_state_statusword`:
+    - shape:  (173318,)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  215  for idx [0]
+
+Accessing Data for `03_command_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  22.314138715770792  for idx [0]
+
+Accessing Data for `03_command_mode`:
+    - shape:  (173318,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  13  for idx [0]
+
+Accessing Data for `03_command_pid_gains_d`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.1  for idx [0]
+
+Accessing Data for `03_command_pid_gains_i`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `03_command_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.016234487388995612  for idx [0]
+
+Accessing Data for `03_command_pid_gains_p`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  8.0  for idx [0]
+
+Accessing Data for `03_command_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  8.996290156346623e-05  for idx [0]
+
+Accessing Data for `03_state_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  6.566393852233887  for idx [0]
+
+Accessing Data for `03_state_gear_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.0007521722528982436  for idx [0]
+
+Accessing Data for `03_state_gear_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.09429188072681427  for idx [0]
+
+Accessing Data for `03_state_imu_ang_vel`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `03_state_imu_ang_vel_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `03_state_imu_lin_acc`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `03_state_imu_orien`:
+    - shape:  (173318, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 1.]  for idx [0]
+
+Accessing Data for `03_state_joint_acceleration`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  3.1622132426839076e-05  for idx [0]
+
+Accessing Data for `03_state_imu_lin_acc_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `03_state_imu_orien_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `03_state_joint_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.07840079814195633  for idx [0]
+
+Accessing Data for `03_state_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  21.40130043029785  for idx [0]
+
+Accessing Data for `03_state_joint_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1.784693219073738e-27  for idx [0]
+
+Accessing Data for `03_state_statusword`:
+    - shape:  (173318,)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  215  for idx [0]
+
+Accessing Data for `04_command_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  25.00732602349317  for idx [0]
+
+Accessing Data for `04_command_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `04_command_mode`:
+    - shape:  (173318,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  13  for idx [0]
+
+Accessing Data for `04_command_pid_gains_d`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.1  for idx [0]
+
+Accessing Data for `04_command_pid_gains_i`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `04_command_pid_gains_p`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  8.0  for idx [0]
+
+Accessing Data for `04_command_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.5299265351098918  for idx [0]
+
+Accessing Data for `04_command_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.0012347242713756147  for idx [0]
+
+Accessing Data for `04_state_gear_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.5220568180084229  for idx [0]
+
+Accessing Data for `04_state_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  7.075440406799316  for idx [0]
+
+Accessing Data for `04_state_gear_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0009592999480267082  for idx [0]
+
+Accessing Data for `04_state_imu_ang_vel_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `04_state_imu_ang_vel`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `04_state_imu_lin_acc`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `04_state_imu_lin_acc_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `04_state_imu_orien`:
+    - shape:  (173318, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 1.]  for idx [0]
+
+Accessing Data for `04_state_imu_orien_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `04_state_joint_acceleration`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0011300534042125942  for idx [0]
+
+Accessing Data for `04_state_joint_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.5022109150886536  for idx [0]
+
+Accessing Data for `04_state_joint_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  5.070125953001711e-07  for idx [0]
+
+Accessing Data for `04_state_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  25.164718627929688  for idx [0]
+
+Accessing Data for `05_command_mode`:
+    - shape:  (173318,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  13  for idx [0]
+
+Accessing Data for `05_command_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `04_state_statusword`:
+    - shape:  (173318,)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  215  for idx [0]
+
+Accessing Data for `05_command_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  45.7041482365775  for idx [0]
+
+Accessing Data for `05_command_pid_gains_d`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.1  for idx [0]
+
+Accessing Data for `05_command_pid_gains_i`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `05_command_pid_gains_p`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  6.0  for idx [0]
+
+Accessing Data for `05_command_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.9950549580918637  for idx [0]
+
+Accessing Data for `05_state_imu_lin_acc`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `05_state_gear_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -1.0040383338928223  for idx [0]
+
+Accessing Data for `05_command_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0034688806731747713  for idx [0]
+
+Accessing Data for `05_state_imu_ang_vel`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `05_state_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  14.353318214416504  for idx [0]
+
+Accessing Data for `05_state_imu_lin_acc_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `05_state_imu_ang_vel_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `05_state_gear_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.0036090247532243997  for idx [0]
+
+Accessing Data for `05_state_imu_orien`:
+    - shape:  (173318, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 1.]  for idx [0]
+
+Accessing Data for `05_state_imu_orien_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `05_state_joint_acceleration`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.010905183552095894  for idx [0]
+
+Accessing Data for `05_state_joint_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -1.0402547121047974  for idx [0]
+
+Accessing Data for `05_state_joint_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0057795055929396695  for idx [0]
+
+Accessing Data for `05_state_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  45.69086837768555  for idx [0]
+
+Accessing Data for `06_command_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `06_command_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -22.063921761148187  for idx [0]
+
+Accessing Data for `05_state_statusword`:
+    - shape:  (173318,)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  215  for idx [0]
+
+Accessing Data for `06_command_mode`:
+    - shape:  (173318,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  13  for idx [0]
+
+Accessing Data for `06_command_pid_gains_d`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.1  for idx [0]
+
+Accessing Data for `06_command_pid_gains_i`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `06_command_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0009870740237844428  for idx [0]
+
+Accessing Data for `06_command_pid_gains_p`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  8.0  for idx [0]
+
+Accessing Data for `06_command_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -8.981114636183083e-05  for idx [0]
+
+Accessing Data for `06_state_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -5.864302158355713  for idx [0]
+
+Accessing Data for `06_state_gear_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.02202700637280941  for idx [0]
+
+Accessing Data for `06_state_gear_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.00031359563013578606  for idx [0]
+
+Accessing Data for `06_state_imu_ang_vel`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `06_state_imu_lin_acc_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `06_state_imu_ang_vel_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `06_state_imu_orien`:
+    - shape:  (173318, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 1.]  for idx [0]
+
+Accessing Data for `06_state_imu_lin_acc`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `06_state_imu_orien_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `06_state_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -22.323204040527344  for idx [0]
+
+Accessing Data for `06_state_joint_acceleration`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.028197089810352013  for idx [0]
+
+Accessing Data for `06_state_joint_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.03870904818177223  for idx [0]
+
+Accessing Data for `06_state_joint_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.0032465739254068635  for idx [0]
+
+Accessing Data for `06_state_statusword`:
+    - shape:  (173318,)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  215  for idx [0]
+
+Accessing Data for `07_command_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `07_command_mode`:
+    - shape:  (173318,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  13  for idx [0]
+
+Accessing Data for `07_command_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -22.256313336707933  for idx [0]
+
+Accessing Data for `07_command_pid_gains_i`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `07_command_pid_gains_d`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.1  for idx [0]
+
+Accessing Data for `07_command_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.5007972508672598  for idx [0]
+
+Accessing Data for `07_command_pid_gains_p`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  8.0  for idx [0]
+
+Accessing Data for `07_command_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.00022131158316513404  for idx [0]
+
+Accessing Data for `07_state_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -5.685456275939941  for idx [0]
+
+Accessing Data for `07_state_imu_ang_vel`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `07_state_gear_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.0005095859104890778  for idx [0]
+
+Accessing Data for `07_state_gear_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.48663145303726196  for idx [0]
+
+Accessing Data for `07_state_imu_ang_vel_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `07_state_imu_orien`:
+    - shape:  (173318, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 1.]  for idx [0]
+
+Accessing Data for `07_state_imu_lin_acc_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `07_state_imu_lin_acc`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `07_state_imu_orien_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `07_state_joint_acceleration`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.002586331883485192  for idx [0]
+
+Accessing Data for `07_state_joint_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.4686790704727173  for idx [0]
+
+Accessing Data for `07_state_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -22.498146057128906  for idx [0]
+
+Accessing Data for `07_state_statusword`:
+    - shape:  (173318,)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  215  for idx [0]
+
+Accessing Data for `07_state_joint_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  9.977359749462698e-05  for idx [0]
+
+Accessing Data for `08_command_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `08_command_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -35.20765197345523  for idx [0]
+
+Accessing Data for `08_command_mode`:
+    - shape:  (173318,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  13  for idx [0]
+
+Accessing Data for `08_command_pid_gains_i`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `08_command_pid_gains_p`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  6.0  for idx [0]
+
+Accessing Data for `08_command_pid_gains_d`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.1  for idx [0]
+
+Accessing Data for `08_command_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.9250173065761048  for idx [0]
+
+Accessing Data for `08_command_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0018622513061625741  for idx [0]
+
+Accessing Data for `08_state_gear_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.8509998321533203  for idx [0]
+
+Accessing Data for `08_state_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -9.812033653259277  for idx [0]
+
+Accessing Data for `08_state_gear_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -2.2530375432952538e-05  for idx [0]
+
+Accessing Data for `08_state_imu_ang_vel`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `08_state_imu_ang_vel_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `08_state_imu_lin_acc`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `08_state_imu_orien`:
+    - shape:  (173318, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 1.]  for idx [0]
+
+Accessing Data for `08_state_joint_acceleration`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.0013116554707628377  for idx [0]
+
+Accessing Data for `08_state_imu_orien_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `08_state_imu_lin_acc_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `08_state_joint_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.8785635232925415  for idx [0]
+
+Accessing Data for `08_state_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -34.852378845214844  for idx [0]
+
+Accessing Data for `08_state_joint_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -7.675561622712471e-07  for idx [0]
+
+Accessing Data for `08_state_statusword`:
+    - shape:  (173318,)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  215  for idx [0]
+
+Accessing Data for `09_command_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `09_command_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  25.597851754076835  for idx [0]
+
+Accessing Data for `09_command_mode`:
+    - shape:  (173318,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  13  for idx [0]
+
+Accessing Data for `09_command_pid_gains_d`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.1  for idx [0]
+
+Accessing Data for `09_command_pid_gains_i`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `09_command_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.00012041944613295881  for idx [0]
+
+Accessing Data for `09_command_pid_gains_p`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  8.0  for idx [0]
+
+Accessing Data for `09_state_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  7.968527317047119  for idx [0]
+
+Accessing Data for `09_command_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.023415610354011896  for idx [0]
+
+Accessing Data for `09_state_gear_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.024759409949183464  for idx [0]
+
+Accessing Data for `09_state_gear_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.00017345339341101352  for idx [0]
+
+Accessing Data for `09_state_imu_ang_vel_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `09_state_imu_lin_acc`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `09_state_imu_ang_vel`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `09_state_imu_lin_acc_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `09_state_imu_orien`:
+    - shape:  (173318, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 1.]  for idx [0]
+
+Accessing Data for `09_state_joint_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.004889564123004675  for idx [0]
+
+Accessing Data for `09_state_imu_orien_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `09_state_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  25.270572662353516  for idx [0]
+
+Accessing Data for `09_state_joint_acceleration`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  3.5833651091591334e-05  for idx [0]
+
+Accessing Data for `09_state_statusword`:
+    - shape:  (173318,)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  215  for idx [0]
+
+Accessing Data for `09_state_joint_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  5.869745281346005e-46  for idx [0]
+
+Accessing Data for `10_command_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `10_command_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -22.123641286722176  for idx [0]
+
+Accessing Data for `10_command_mode`:
+    - shape:  (173318,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  13  for idx [0]
+
+Accessing Data for `10_command_pid_gains_d`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.1  for idx [0]
+
+Accessing Data for `10_command_pid_gains_p`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  8.0  for idx [0]
+
+Accessing Data for `10_command_pid_gains_i`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `10_state_gear_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  4.769845609368615e-11  for idx [0]
+
+Accessing Data for `10_state_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -4.597106456756592  for idx [0]
+
+Accessing Data for `10_state_gear_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.5426936745643616  for idx [0]
+
+Accessing Data for `10_command_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.00010707313489427733  for idx [0]
+
+Accessing Data for `10_command_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.48994081305445625  for idx [0]
+
+Accessing Data for `10_state_imu_ang_vel`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `10_state_imu_ang_vel_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `10_state_imu_lin_acc`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `10_state_imu_orien`:
+    - shape:  (173318, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 1.]  for idx [0]
+
+Accessing Data for `10_state_joint_acceleration`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0021598858018179855  for idx [0]
+
+Accessing Data for `10_state_imu_lin_acc_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `10_state_joint_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.5419266819953918  for idx [0]
+
+Accessing Data for `10_state_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -21.706769943237305  for idx [0]
+
+Accessing Data for `10_state_imu_orien_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `10_state_statusword`:
+    - shape:  (173318,)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  215  for idx [0]
+
+Accessing Data for `10_state_joint_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.00043560741108287295  for idx [0]
+
+Accessing Data for `11_command_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `11_command_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -38.321581372496865  for idx [0]
+
+Accessing Data for `11_command_mode`:
+    - shape:  (173318,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  13  for idx [0]
+
+Accessing Data for `11_command_pid_gains_d`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.1  for idx [0]
+
+Accessing Data for `11_command_pid_gains_i`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `11_command_pid_gains_p`:
+    - shape:  (173318,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  6.0  for idx [0]
+
+Accessing Data for `11_command_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.9144041666048568  for idx [0]
+
+Accessing Data for `11_command_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0008919556581041417  for idx [0]
+
+Accessing Data for `11_state_gear_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -0.001169058311209247  for idx [0]
+
+Accessing Data for `11_state_imu_ang_vel_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `11_state_imu_lin_acc`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `11_state_gear_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.9280823469161987  for idx [0]
+
+Accessing Data for `11_state_imu_ang_vel`:
+    - shape:  (173318, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `11_state_current`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -9.927759170532227  for idx [0]
+
+Accessing Data for `11_state_imu_lin_acc_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `11_state_imu_orien`:
+    - shape:  (173318, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 1.]  for idx [0]
+
+Accessing Data for `11_state_imu_orien_cov`:
+    - shape:  (173318, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `11_state_joint_acceleration`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0005815240780501288  for idx [0]
+
+Accessing Data for `11_state_joint_position`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.956820547580719  for idx [0]
+
+Accessing Data for `11_state_joint_velocity`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  2.501442099865917e-05  for idx [0]
+
+Accessing Data for `11_state_statusword`:
+    - shape:  (173318,)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  215  for idx [0]
+
+Accessing Data for `11_state_joint_torque`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  -38.584861755371094  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (173318,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.0015798  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (173318,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0  for idx [0]
+
+Attributes:
+    - description:      ANYmal Joint State provide by ANYbotics. Feet Names 0-3: ['LF_FOOT', 'RF_FOOT', 'LH_FOOT', 'RH_FOOT']. Joint Naming 0-11: ['LF_HAA', 'LF_HFE', 'LF_KFE', 'RF_HAA', 'RF_HFE', 'RF_KFE', 'LH_HAA', 'LH_HFE', 'LH_KFE', 'RH_HAA', 'RH_HFE', 'RH_KFE']
+    - frame_id:      
+    - topic:      anymal_state_actuator
+--------------------------------------------
+
+Zarr group:  anymal_state_battery
+
+Data Fields
+
+Accessing Data for `fet_temperature`:
+    - shape:  (4248,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  2.350989e-38  for idx [0]
+
+Accessing Data for `bms_temperature`:
+    - shape:  (4248,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1.267251e-26  for idx [0]
+
+Accessing Data for `health_status`:
+    - shape:  (4248,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  194  for idx [0]
+
+Accessing Data for `cell_temperature`:
+    - shape:  (4248,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  31.649994  for idx [0]
+
+Accessing Data for `battery_status`:
+    - shape:  (4248,)
+    - dtype:  uint16
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  16501  for idx [0]
+
+Accessing Data for `current`:
+    - shape:  (4248,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  3.5672367e-38  for idx [0]
+
+Accessing Data for `humidity`:
+    - shape:  (4248,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1.7e-44  for idx [0]
+
+Accessing Data for `is_connected`:
+    - shape:  (4248,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1  for idx [0]
+
+Accessing Data for `safety_status`:
+    - shape:  (4248,)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1081434178  for idx [0]
+
+Accessing Data for `pressure`:
+    - shape:  (4248,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  3.832  for idx [0]
+
+Accessing Data for `status`:
+    - shape:  (4248,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  143  for idx [0]
+
+Accessing Data for `voltage`:
+    - shape:  (4248,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1.1211328e-16  for idx [0]
+
+Accessing Data for `state_of_charge`:
+    - shape:  (4248,)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.013000011  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (4248,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  27972  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (4248,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.0248318  for idx [0]
+
+Attributes:
+    - description:      ANYmal D battery state readings.
+    - frame_id:      
+    - topic:      anymal_state_battery
+--------------------------------------------
+
+Zarr group:  anymal_state_odometry
+
+Data Fields
+
+Accessing Data for `pose_orien`:
+    - shape:  (8663, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [ 0.00437133 -0.00555858 -0.70519675 -0.7089764 ]  for idx [0]
+
+Accessing Data for `twist_ang`:
+    - shape:  (8663, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-0.0002939  -0.00032435  0.00037146]  for idx [0]
+
+Accessing Data for `pose_pos`:
+    - shape:  (8663, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [213.78464019  11.16108758  10.38872616]  for idx [0]
+
+Accessing Data for `twist_lin`:
+    - shape:  (8663, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-2.24317888e-04 -2.80516106e-05 -2.28043978e-05]  for idx [0]
+
+Accessing Data for `pose_cov`:
+    - shape:  (8663, 6, 6)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[ 1.55472792e-01  2.14196605e-01  5.23613201e-06  3.65557549e-07
+   6.15227559e-06 -8.93249764e-04]
+ [ 2.14196605e-01  1.72465587e+00 -2.99294768e-03 -5.36002707e-06
+   1.96702902e-07  3.47682568e-04]
+ [ 5.23613201e-06 -2.99294768e-03  2.59326331e-02 -4.80529101e-08
+  -2.75737182e-07 -5.47073091e-06]
+ [ 3.65557549e-07 -5.36002707e-06 -4.80529101e-08  7.51641326e-06
+  -5.74957876e-08 -7.61008767e-08]
+ [ 6.15227559e-06  1.96702902e-07 -2.75737182e-07 -5.74957876e-08
+   9.42500399e-06  1.26178888e-07]
+ [-8.93249764e-04  3.47682568e-04 -5.47073091e-06 -7.61008767e-08
+   1.26178888e-07  8.58039578e-04]]  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (8663,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  32483  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (8663,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.0414767  for idx [0]
+
+Accessing Data for `twist_cov`:
+    - shape:  (8663, 6, 6)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[ 1.92933505e-04 -3.28947093e-07  5.86780990e-07  5.27497421e-08
+   4.77901465e-06  6.14759064e-08]
+ [-3.28947093e-07  2.01875753e-04  4.07519965e-07 -6.23993759e-06
+  -5.28564891e-08  1.98997986e-08]
+ [ 5.86780990e-07  4.07519965e-07  1.58188658e-04 -6.93976196e-08
+  -8.67593245e-08 -1.67251873e-10]
+ [ 5.27497421e-08 -6.23993759e-06 -6.93976196e-08  3.53492017e-06
+   8.88584526e-09  5.84839126e-09]
+ [ 4.77901465e-06 -5.28564891e-08 -8.67593245e-08  8.88584526e-09
+   3.28799710e-06  1.06649817e-09]
+ [ 6.14759064e-08  1.98997986e-08 -1.67251873e-10  5.84839126e-09
+   1.06649817e-09  3.39492352e-06]]  for idx [0]
+
+Attributes:
+    - description:      ANYmal leg inertial odometry solution.
+    - frame_id:      odom
+    - topic:      anymal_state_odometry
+--------------------------------------------
+
+Zarr group:  anymal_state_state_estimator
+
+Data Fields
+
+Accessing Data for `LF_FOOT_friction_coef`:
+    - shape:  (173589,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.8  for idx [0]
+
+Accessing Data for `joint_efforts`:
+    - shape:  (173589, 12)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-28.21385193  20.69269371  37.47561264  21.40130043  25.16472054
+  45.72588348 -22.29172325 -22.46513367 -34.82207108  25.27057266
+ -21.7063942  -38.55256653]  for idx [0]
+
+Accessing Data for `joint_velocities`:
+    - shape:  (173589, 12)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [ 5.86974528e-46  5.86974528e-46 -8.69103935e-06  2.89236274e-23
+ -2.73646560e-06  1.09513501e-03 -2.49821623e-03 -2.78113581e-03
+ -1.66443200e-04  5.86974528e-46  1.56422587e-08 -7.76634803e-41]  for idx [0]
+
+Accessing Data for `joint_positions`:
+    - shape:  (173589, 12)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [ 0.08314656  0.4575817  -0.89991945  0.0784008   0.50218695 -1.04027867
+  0.03870905 -0.46870306  0.87856352  0.00488956 -0.54192668  0.95679659]  for idx [0]
+
+Accessing Data for `joint_accelerations`:
+    - shape:  (173589, 12)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-9.99864338e-05  1.99615461e-05 -3.69935039e-03  5.37121467e-05
+ -1.18293331e-03  4.53930489e-03 -3.99925569e-02 -2.56423109e-03
+ -2.17456609e-03  4.01786915e-05  8.58637823e-04 -9.67752128e-05]  for idx [0]
+
+Accessing Data for `LF_FOOT_normal`:
+    - shape:  (173589, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 1.]  for idx [0]
+
+Accessing Data for `LF_FOOT_contact`:
+    - shape:  (173589,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1  for idx [0]
+
+Accessing Data for `LF_FOOT_state`:
+    - shape:  (173589,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1  for idx [0]
+
+Accessing Data for `LF_FOOT_restitution_coef`:
+    - shape:  (173589,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `LH_FOOT_contact`:
+    - shape:  (173589,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1  for idx [0]
+
+Accessing Data for `LF_FOOT_wrench_force`:
+    - shape:  (173589, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [  6.5079907   -3.9553315  156.32532568]  for idx [0]
+
+Accessing Data for `LH_FOOT_friction_coef`:
+    - shape:  (173589,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.8  for idx [0]
+
+Accessing Data for `LF_FOOT_wrench_torque`:
+    - shape:  (173589, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `LH_FOOT_normal`:
+    - shape:  (173589, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 1.]  for idx [0]
+
+Accessing Data for `LH_FOOT_state`:
+    - shape:  (173589,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1  for idx [0]
+
+Accessing Data for `LH_FOOT_wrench_force`:
+    - shape:  (173589, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [  3.61482327  -2.67696825 138.38552859]  for idx [0]
+
+Accessing Data for `LH_FOOT_wrench_torque`:
+    - shape:  (173589, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `LH_FOOT_restitution_coef`:
+    - shape:  (173589,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `pose_pos`:
+    - shape:  (173589, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [213.78463209  11.16108852  10.38872133]  for idx [0]
+
+Accessing Data for `RF_FOOT_friction_coef`:
+    - shape:  (173589,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.8  for idx [0]
+
+Accessing Data for `RF_FOOT_contact`:
+    - shape:  (173589,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1  for idx [0]
+
+Accessing Data for `RF_FOOT_normal`:
+    - shape:  (173589, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 1.]  for idx [0]
+
+Accessing Data for `RF_FOOT_wrench_force`:
+    - shape:  (173589, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [ -0.28629043  -5.31992969 171.26383363]  for idx [0]
+
+Accessing Data for `RF_FOOT_restitution_coef`:
+    - shape:  (173589,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `pose_orien`:
+    - shape:  (173589, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [ 0.00438561 -0.00556546 -0.7051988  -0.70897422]  for idx [0]
+
+Accessing Data for `RF_FOOT_state`:
+    - shape:  (173589,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1  for idx [0]
+
+Accessing Data for `RH_FOOT_contact`:
+    - shape:  (173589,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1  for idx [0]
+
+Accessing Data for `RF_FOOT_wrench_torque`:
+    - shape:  (173589, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `RH_FOOT_friction_coef`:
+    - shape:  (173589,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.8  for idx [0]
+
+Accessing Data for `RH_FOOT_normal`:
+    - shape:  (173589, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 1.]  for idx [0]
+
+Accessing Data for `RH_FOOT_state`:
+    - shape:  (173589,)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1  for idx [0]
+
+Accessing Data for `RH_FOOT_restitution_coef`:
+    - shape:  (173589,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `RH_FOOT_wrench_force`:
+    - shape:  (173589, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [  1.91078176  -1.34926781 153.90600953]  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (173589,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776101.9687588  for idx [0]
+
+Accessing Data for `RH_FOOT_wrench_torque`:
+    - shape:  (173589, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0.]  for idx [0]
+
+Accessing Data for `twist_ang`:
+    - shape:  (173589, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [6.36201331e-04 5.51381085e-05 6.62016618e-05]  for idx [0]
+
+Accessing Data for `twist_lin`:
+    - shape:  (173589, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-0.00017754  0.00033074 -0.00016489]  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (173589,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  156196  for idx [0]
+
+Attributes:
+    - description:      ANYmal full state provided by ANYbotics. Feet Names 0-3: ['LF_FOOT', 'RF_FOOT', 'LH_FOOT', 'RH_FOOT']. Joint Naming 0-11: ['LF_HAA', 'LF_HFE', 'LF_KFE', 'RF_HAA', 'RF_HFE', 'RF_KFE', 'LH_HAA', 'LH_HFE', 'LH_KFE', 'RH_HAA', 'RH_HFE', 'RH_KFE']
+    - frame_id:      odom
+    - topic:      anymal_state_state_estimator
+--------------------------------------------
+
+Zarr group:  ap20_imu
+
+Data Fields
+
+Accessing Data for `timestamp`:
+    - shape:  (82875,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.0011542  for idx [0]
+
+Accessing Data for `lin_acc_cov`:
+    - shape:  (82875, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0.00019745 0.         0.        ]
+ [0.         0.00019745 0.        ]
+ [0.         0.         0.00019745]]  for idx [0]
+
+Accessing Data for `lin_acc`:
+    - shape:  (82875, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-0.17149     9.79907036  0.03243   ]  for idx [0]
+
+Accessing Data for `orien`:
+    - shape:  (82875, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 0.]  for idx [0]
+
+Accessing Data for `orien_cov`:
+    - shape:  (82875, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[-1.  0.  0.]
+ [ 0.  0.  0.]
+ [ 0.  0.  0.]]  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (82875,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0  for idx [0]
+
+Accessing Data for `ang_vel_cov`:
+    - shape:  (82875, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[3.17150426e-06 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.17150426e-06 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 3.17150426e-06]]  for idx [0]
+
+Accessing Data for `ang_vel`:
+    - shape:  (82875, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [ 0.0004468  -0.00126013  0.00068417]  for idx [0]
+
+Attributes:
+    - description:      Leica Geosystems AP20 200Hz (data is only available while the bluetooth conntetion to the MS60 is active)
+    - frame_id:      ap20_imu
+    - topic:      ap20_imu
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'ap20_imu', 'rotation': {'w': 0.7118234995434812, 'x': 0.7023441372038522, 'y': 0.002839101058711715, 'z': -0.003458025191722333}, 'translation': {'x': -0.0019815872862082684, 'y': 0.002909799597334762, 'z': 0.10495166375034842}}
+--------------------------------------------
+
+Zarr group:  cpt7_imu
+
+Data Fields
+
+Accessing Data for `timestamp`:
+    - shape:  (43283,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.003562  for idx [0]
+
+Accessing Data for `orien_cov`:
+    - shape:  (43283, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (43283,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  3721  for idx [0]
+
+Accessing Data for `ang_vel_cov`:
+    - shape:  (43283, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[1.24080229e-08 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 1.24080229e-08 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 1.24080229e-08]]  for idx [0]
+
+Accessing Data for `orien`:
+    - shape:  (43283, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 0.]  for idx [0]
+
+Accessing Data for `lin_acc`:
+    - shape:  (43283, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-1.13612972e-01 -8.30069184e-03 -9.82889365e+00]  for idx [0]
+
+Accessing Data for `lin_acc_cov`:
+    - shape:  (43283, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[3.51492413e-05 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.51492413e-05 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 3.51492413e-05]]  for idx [0]
+
+Accessing Data for `ang_vel`:
+    - shape:  (43283, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-4.95219138e-04  5.48665412e-04  7.79051334e-05]  for idx [0]
+
+Attributes:
+    - description:      Honeywell HG4930 100Hz (integrated in Novatel CPT7)
+    - frame_id:      cpt7_imu
+    - topic:      cpt7_imu
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'cpt7_imu', 'rotation': {'w': 1.0, 'x': -0.0, 'y': -0.0, 'z': -0.0}, 'translation': {'x': 0.0, 'y': 0.0, 'z': 0.0}}
+--------------------------------------------
+
+Zarr group:  depth_camera_front_upper
+
+Data Fields
+
+Accessing Data for `sequence_id`:
+    - shape:  (6508,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  24390  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (6508,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.004754  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [0.0, 0.0, 0.0, 0.0, 0.0], 'K': [428.0040283203125, 0.0, 429.46905517578125, 0.0, 428.0040283203125, 233.146240234375, 0.0, 0.0, 1.0], 'P': [428.0040283203125, 0.0, 429.46905517578125, 0.0, 0.0, 428.0040283203125, 233.146240234375, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'plumb_bob', 'frame_id': 'depth_camera_front_upper', 'height': 480, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 848}
+    - description:      15Hz - 848x480 - IntelRealsense D435i front upper (Integrated in ANYbotics ANYmal D)
+    - frame_id:      depth_camera_front_upper
+    - topic:      depth_camera_front_upper
+    - transform:      {'base_frame_id': 'base', 'child_frame_id': 'depth_camera_front_upper', 'rotation': {'w': 0.4306894486036953, 'x': -0.5608677721283586, 'y': -0.560580238989435, 'z': -0.43091035808363254}, 'translation': {'x': 0.024957449516778196, 'y': -0.0829849350915826, 'z': -0.3905787382352799}}
+--------------------------------------------
+
+Zarr group:  depth_camera_left
+
+Data Fields
+
+Accessing Data for `timestamp`:
+    - shape:  (6509,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.017611  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (6509,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  24384  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [0.0, 0.0, 0.0, 0.0, 0.0], 'K': [427.0599060058594, 0.0, 423.9487609863281, 0.0, 427.0599060058594, 230.01365661621094, 0.0, 0.0, 1.0], 'P': [427.0599060058594, 0.0, 423.9487609863281, 0.0, 0.0, 427.0599060058594, 230.01365661621094, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'plumb_bob', 'frame_id': 'depth_camera_left', 'height': 480, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 848}
+    - description:      15Hz - 848x480 - IntelRealsense D435i left (Integrated in ANYbotics ANYmal D)
+    - frame_id:      depth_camera_left
+    - topic:      depth_camera_left
+    - transform:      {'base_frame_id': 'base', 'child_frame_id': 'depth_camera_left', 'rotation': {'w': -0.40524782131784814, 'x': -0.9141898919041819, 'y': -0.0050937542777571565, 'z': -0.002257991301008538}, 'translation': {'x': 0.0242061858130713, 'y': 0.07137107769940886, 'z': -0.06013160430595553}}
+--------------------------------------------
+
+Zarr group:  depth_camera_rear_upper
+
+Data Fields
+
+Accessing Data for `timestamp`:
+    - shape:  (6508,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.0176902  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (6508,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  24377  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [0.0, 0.0, 0.0, 0.0, 0.0], 'K': [427.3077392578125, 0.0, 426.9342956542969, 0.0, 427.3077392578125, 233.3394012451172, 0.0, 0.0, 1.0], 'P': [427.3077392578125, 0.0, 426.9342956542969, 0.0, 0.0, 427.3077392578125, 233.3394012451172, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'plumb_bob', 'frame_id': 'depth_camera_rear_upper', 'height': 480, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 848}
+    - description:      15Hz - 848x480 - IntelRealsense D435i rear upper (Integrated in ANYbotics ANYmal D)
+    - frame_id:      depth_camera_rear_upper
+    - topic:      depth_camera_rear_upper
+    - transform:      {'base_frame_id': 'base', 'child_frame_id': 'depth_camera_rear_upper', 'rotation': {'w': -0.4288525438138612, 'x': 0.5606297691810952, 'y': -0.567966630879787, 'z': -0.42331272574704876}, 'translation': {'x': 0.023834299957984015, 'y': -0.08981592717100904, 'z': -0.38913513060622656}}
+--------------------------------------------
+
+Zarr group:  depth_camera_right
+
+Data Fields
+
+Accessing Data for `sequence_id`:
+    - shape:  (6509,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  24384  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (6509,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.035196  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [0.0, 0.0, 0.0, 0.0, 0.0], 'K': [428.760009765625, 0.0, 425.7598571777344, 0.0, 428.760009765625, 232.03164672851562, 0.0, 0.0, 1.0], 'P': [428.760009765625, 0.0, 425.7598571777344, 0.0, 0.0, 428.760009765625, 232.03164672851562, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'plumb_bob', 'frame_id': 'depth_camera_right', 'height': 480, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 848}
+    - description:      15Hz - 848x480 - IntelRealsense D435i right (Integrated in ANYbotics ANYmal D)
+    - frame_id:      depth_camera_right
+    - topic:      depth_camera_right
+    - transform:      {'base_frame_id': 'base', 'child_frame_id': 'depth_camera_right', 'rotation': {'w': 0.0020469741271627595, 'x': -0.004486598891874416, 'y': -0.9097731195609077, 'z': 0.41507656071105803}, 'translation': {'x': 0.025687060614725817, 'y': 0.06953460693100322, 'z': -0.06164976363236345}}
+--------------------------------------------
+
+Zarr group:  dlio_hesai_points_undistorted
+
+Data Fields
+
+Accessing Data for `time`:
+    - shape:  (4305, 69000)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [1.7277761e+09 1.7277761e+09 1.7277761e+09 ... 0.0000000e+00 0.0000000e+00
+ 0.0000000e+00]  for idx [0]
+
+Accessing Data for `valid`:
+    - shape:  (4305, 1)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [50130]  for idx [0]
+
+Accessing Data for `points`:
+    - shape:  (4305, 69000, 3)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[-2.016502   -3.6133423  -0.4281006 ]
+ [-2.4098575  -4.3093677   0.25545105]
+ [-2.3885145  -4.302969    0.2546192 ]
+ ...
+ [ 0.          0.          0.        ]
+ [ 0.          0.          0.        ]
+ [ 0.          0.          0.        ]]  for idx [0]
+
+Accessing Data for `intensity`:
+    - shape:  (4305, 69000)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [17. 26. 17. ...  0.  0.  0.]  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (4305,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.073955  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (4305,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0  for idx [0]
+
+Attributes:
+    - description:      10Hz - Hesai XT-32 - undistorted using Direct LiDAR Interial Odometry (DLIO)
+    - frame_id:      hesai_lidar
+    - topic:      dlio_hesai_points_undistorted
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'hesai_lidar', 'rotation': {'w': -0.004419949690193552, 'x': -0.7093301791430758, 'y': 0.7048516039326548, 'z': 0.003921407292290494}, 'translation': {'x': -0.04461184951630229, 'y': 0.3022381420105506, 'z': -0.01253994548350209}}
+--------------------------------------------
+
+Zarr group:  dlio_map_odometry
+
+Data Fields
+
+Accessing Data for `timestamp`:
+    - shape:  (4305,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.073955  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (4305,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0  for idx [0]
+
+Accessing Data for `pose_pos`:
+    - shape:  (4305, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-0.05083602  0.00204089  0.45215756]  for idx [0]
+
+Accessing Data for `pose_orien`:
+    - shape:  (4305, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [ 0.00674624 -0.00648495 -0.01564742  0.99983382]  for idx [0]
+
+Accessing Data for `twist_ang`:
+    - shape:  (4305, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-9.80593730e-04  5.39849629e-04  2.37819768e-05]  for idx [0]
+
+Accessing Data for `twist_cov`:
+    - shape:  (4305, 6, 6)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]  for idx [0]
+
+Accessing Data for `pose_cov`:
+    - shape:  (4305, 6, 6)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0.]]  for idx [0]
+
+Accessing Data for `twist_lin`:
+    - shape:  (4305, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [1.00408401e-03 2.05721101e-03 6.42561572e-05]  for idx [0]
+
+Attributes:
+    - description:      Direct LiDAR Interial Odometry (DLIO) using Hesai XT32 LiDAR and Honeywell HG4930 IMU.
+    - frame_id:      dlio_map
+    - topic:      dlio_map_odometry
+--------------------------------------------
+
+Zarr group:  dlio_tf
+
+Data Fields
+
+Accessing Data for `sequence_id`:
+    - shape:  (47567,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0  for idx [0]
+
+Accessing Data for `translation`:
+    - shape:  (47567, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [ 0.04506643 -0.00541188 -0.45313624]  for idx [0]
+
+Accessing Data for `rotation`:
+    - shape:  (47567, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-0.00654574  0.00646906  0.01576322  0.99983341]  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (47567,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.003562  for idx [0]
+
+Attributes:
+    - description:      Direct LiDAR Interial Odometry (DLIO) using Hesai XT32 LiDAR and Honeywell HG4930.
+    - frame_id:      hesai_lidar
+    - topic:      dlio_tf
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'hesai_lidar', 'rotation': {'w': -0.004419949690193552, 'x': -0.7093301791430758, 'y': 0.7048516039326548, 'z': 0.003921407292290494}, 'translation': {'x': -0.04461184951630229, 'y': 0.3022381420105506, 'z': -0.01253994548350209}}
+--------------------------------------------
+
+Zarr group:  hdr_front
+
+Data Fields
+
+Accessing Data for `timestamp`:
+    - shape:  (4226,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.0117338  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (4226,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  322  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [-0.06226555154591874, 0.006984942920386333, -0.005291335660179726, 0.001455018149071658], 'K': [984.8643239835407, 0.0, 946.7086445278437, 0.0, 984.5008837495056, 636.9616008492758, 0.0, 0.0, 1.0], 'P': [984.8643239835407, 0.0, 946.7086445278437, 0.0, 0.0, 984.5008837495056, 636.9616008492758, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'equidistant', 'frame_id': 'hdr_front', 'height': 1280, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 1920}
+    - description:      10Hz - 1920x1280 - TierIV C1 front (120dB, Color, 2.5MP)
+    - frame_id:      hdr_front
+    - topic:      hdr_front
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'hdr_front', 'rotation': {'w': 0.4970495903927929, 'x': -0.499305922637098, 'y': -0.5005829735777374, 'z': -0.5030427286761467}, 'translation': {'x': 0.04836030494808155, 'y': -0.10282483832595525, 'z': -0.36926064730524666}}
+--------------------------------------------
+
+Zarr group:  hdr_left
+
+Data Fields
+
+Accessing Data for `timestamp`:
+    - shape:  (4226,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.0117338  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (4226,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  334  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [-0.06197316482293826, 0.004006257468933251, -0.001841005641481967, 0.000127217281951442], 'K': [989.5113761548931, 0.0, 941.6012985424921, 0.0, 989.4529900290106, 638.5569783252755, 0.0, 0.0, 1.0], 'P': [989.5113761548931, 0.0, 941.6012985424921, 0.0, 0.0, 989.4529900290106, 638.5569783252755, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'equidistant', 'frame_id': 'hdr_left', 'height': 1280, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 1920}
+    - description:      10Hz - 1920x1280 - TierIV C1 left (120dB, Color, 2.5MP)
+    - frame_id:      hdr_left
+    - topic:      hdr_left
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'hdr_left', 'rotation': {'w': 0.6981144475823984, 'x': -0.7106446365240748, 'y': 0.06071950908492229, 'z': 0.06271809844673303}, 'translation': {'x': -0.3123877547915767, 'y': -0.1040746815988313, 'z': -0.0946004294028184}}
+--------------------------------------------
+
+Zarr group:  hdr_right
+
+Data Fields
+
+Accessing Data for `sequence_id`:
+    - shape:  (4226,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  309  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (4226,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.0117338  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [-0.06150262047071293, 0.003455916289334078, -0.001233506511528716, -1.770797322903057e-07], 'K': [984.407734999804, 0.0, 952.3920462113495, 0.0, 983.8103917846685, 638.6385463949282, 0.0, 0.0, 1.0], 'P': [984.407734999804, 0.0, 952.3920462113495, 0.0, 0.0, 983.8103917846685, 638.6385463949282, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'equidistant', 'frame_id': 'hdr_right', 'height': 1280, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 1920}
+    - description:      10Hz - 1920x1280 - TierIV C1 right (120dB, Color, 2.5MP)
+    - frame_id:      hdr_right
+    - topic:      hdr_right
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'hdr_right', 'rotation': {'w': -0.05968925863378414, 'x': 0.06271504848629056, 'y': -0.701622990300235, 'z': -0.7072688276598}, 'translation': {'x': 0.2984670188513917, 'y': -0.1021873680871323, 'z': -0.007282571655555148}}
+--------------------------------------------
+
+Zarr group:  hesai
+
+Data Fields
+
+Accessing Data for `valid`:
+    - shape:  (5, 1)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [52985]  for idx [0]
+
+Accessing Data for `ring`:
+    - shape:  (5, 69000)
+    - dtype:  uint16
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0 1 2 ... 0 0 0]  for idx [0]
+
+Accessing Data for `intensity`:
+    - shape:  (5, 69000)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [32. 33. 33. ...  0.  0.  0.]  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (5,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  19982  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (5,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.073955  for idx [0]
+
+Accessing Data for `time`:
+    - shape:  (5, 69000)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [1.7277761e+09 1.7277761e+09 1.7277761e+09 ... 0.0000000e+00 0.0000000e+00
+ 0.0000000e+00]  for idx [0]
+
+Accessing Data for `points`:
+    - shape:  (5, 69000, 3)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[-0.34372622 -0.9381464   0.25884068]
+ [-0.34681216 -0.9457537   0.2424869 ]
+ [-0.34684888 -0.9458499   0.22430633]
+ ...
+ [ 0.          0.          0.        ]
+ [ 0.          0.          0.        ]
+ [ 0.          0.          0.        ]]  for idx [0]
+
+Attributes:
+    - description:      10Hz - Hesai XT-32
+    - frame_id:      hesai_lidar
+    - topic:      hesai
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'hesai_lidar', 'rotation': {'w': -0.004419949690193552, 'x': -0.7093301791430758, 'y': 0.7048516039326548, 'z': 0.003921407292290494}, 'translation': {'x': -0.04461184951630229, 'y': 0.3022381420105506, 'z': -0.01253994548350209}}
+--------------------------------------------
+
+Zarr group:  hesai_points
+
+Data Fields
+
+Accessing Data for `intensity`:
+    - shape:  (4306, 69000)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [32. 33. 33. ...  0.  0.  0.]  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (4306,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.073955  for idx [0]
+
+Accessing Data for `time`:
+    - shape:  (4306, 69000)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [1.7277761e+09 1.7277761e+09 1.7277761e+09 ... 0.0000000e+00 0.0000000e+00
+ 0.0000000e+00]  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (4306,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  19982  for idx [0]
+
+Accessing Data for `ring`:
+    - shape:  (4306, 69000)
+    - dtype:  uint16
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0 1 2 ... 0 0 0]  for idx [0]
+
+Accessing Data for `points`:
+    - shape:  (4306, 69000, 3)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[-0.34372622 -0.9381464   0.25884068]
+ [-0.34681216 -0.9457537   0.2424869 ]
+ [-0.34684888 -0.9458499   0.22430633]
+ ...
+ [ 0.          0.          0.        ]
+ [ 0.          0.          0.        ]
+ [ 0.          0.          0.        ]]  for idx [0]
+
+Accessing Data for `valid`:
+    - shape:  (4306, 1)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [52985]  for idx [0]
+
+Attributes:
+    - description:      10Hz - Hesai XT-32
+    - frame_id:      hesai_lidar
+    - topic:      hesai_points
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'hesai_lidar', 'rotation': {'w': -0.004419949690193552, 'x': -0.7093301791430758, 'y': 0.7048516039326548, 'z': 0.003921407292290494}, 'translation': {'x': -0.04461184951630229, 'y': 0.3022381420105506, 'z': -0.01253994548350209}}
+--------------------------------------------
+
+Zarr group:  hesai_points_undistorted
+
+Data Fields
+
+Accessing Data for `points`:
+    - shape:  (4306, 69000, 3)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[-0.34372622 -0.9381464   0.25884068]
+ [-0.34681216 -0.9457537   0.2424869 ]
+ [-0.34684888 -0.9458499   0.22430633]
+ ...
+ [ 0.          0.          0.        ]
+ [ 0.          0.          0.        ]
+ [ 0.          0.          0.        ]]  for idx [0]
+
+Accessing Data for `time`:
+    - shape:  (4306, 69000)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [1.7277761e+09 1.7277761e+09 1.7277761e+09 ... 0.0000000e+00 0.0000000e+00
+ 0.0000000e+00]  for idx [0]
+
+Accessing Data for `ring`:
+    - shape:  (4306, 69000)
+    - dtype:  uint16
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0 1 2 ... 0 0 0]  for idx [0]
+
+Accessing Data for `intensity`:
+    - shape:  (4306, 69000)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [32. 33. 33. ...  0.  0.  0.]  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (4306,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  19982  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (4306,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.073955  for idx [0]
+
+Accessing Data for `valid`:
+    - shape:  (4306, 1)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [52985]  for idx [0]
+
+Attributes:
+    - description:      10Hz - Hesai XT-32 - undistorted using Leg Interial Odometry
+    - frame_id:      hesai_lidar
+    - topic:      hesai_points_undistorted
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'hesai_lidar', 'rotation': {'w': -0.004419949690193552, 'x': -0.7093301791430758, 'y': 0.7048516039326548, 'z': 0.003921407292290494}, 'translation': {'x': -0.04461184951630229, 'y': 0.3022381420105506, 'z': -0.01253994548350209}}
+--------------------------------------------
+
+Zarr group:  hesai_undistorted
+
+Data Fields
+
+Accessing Data for `points`:
+    - shape:  (5, 69000, 3)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[-0.34372622 -0.9381464   0.25884068]
+ [-0.34681216 -0.9457537   0.2424869 ]
+ [-0.34684888 -0.9458499   0.22430633]
+ ...
+ [ 0.          0.          0.        ]
+ [ 0.          0.          0.        ]
+ [ 0.          0.          0.        ]]  for idx [0]
+
+Accessing Data for `intensity`:
+    - shape:  (5, 69000)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [32. 33. 33. ...  0.  0.  0.]  for idx [0]
+
+Accessing Data for `ring`:
+    - shape:  (5, 69000)
+    - dtype:  uint16
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0 1 2 ... 0 0 0]  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (5,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  19982  for idx [0]
+
+Accessing Data for `time`:
+    - shape:  (5, 69000)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [1.7277761e+09 1.7277761e+09 1.7277761e+09 ... 0.0000000e+00 0.0000000e+00
+ 0.0000000e+00]  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (5,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.073955  for idx [0]
+
+Accessing Data for `valid`:
+    - shape:  (5, 1)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [52985]  for idx [0]
+
+Attributes:
+    - description:      10Hz - Hesai XT-32 - undistorted using Leg Interial Odometry
+    - frame_id:      hesai_lidar
+    - topic:      hesai_undistorted
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'hesai_lidar', 'rotation': {'w': -0.004419949690193552, 'x': -0.7093301791430758, 'y': 0.7048516039326548, 'z': 0.003921407292290494}, 'translation': {'x': -0.04461184951630229, 'y': 0.3022381420105506, 'z': -0.01253994548350209}}
+--------------------------------------------
+
+Zarr group:  livox_imu
+
+Data Fields
+
+Accessing Data for `orien_cov`:
+    - shape:  (86244, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Accessing Data for `ang_vel`:
+    - shape:  (86244, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-0.00578195 -0.00139857 -0.01067771]  for idx [0]
+
+Accessing Data for `lin_acc`:
+    - shape:  (86244, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-2.07222143e-01  9.36420541e-03 -9.75994214e+00]  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (86244,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  399568  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (86244,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.0021722  for idx [0]
+
+Accessing Data for `ang_vel_cov`:
+    - shape:  (86244, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[3.00444781e-06 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.00444781e-06 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 3.00444781e-06]]  for idx [0]
+
+Accessing Data for `lin_acc_cov`:
+    - shape:  (86244, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[8.26454178e-05 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 8.26454178e-05 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 8.26454178e-05]]  for idx [0]
+
+Accessing Data for `orien`:
+    - shape:  (86244, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 0.]  for idx [0]
+
+Attributes:
+    - description:      TDK ICM40609 200Hz (integrated in Livox Mid360)
+    - frame_id:      livox_imu
+    - topic:      livox_imu
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'livox_imu', 'rotation': {'w': 0.9999514279010147, 'x': -0.007862897821623277, 'y': 0.0001266741714154213, 'z': -0.005941433347507674}, 'translation': {'x': -0.309334506793968, 'y': 0.02772866572054537, 'z': 0.15059851991550668}}
+--------------------------------------------
+
+Zarr group:  livox_points
+
+Data Fields
+
+Accessing Data for `sequence_id`:
+    - shape:  (4312,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  19965  for idx [0]
+
+Accessing Data for `tag`:
+    - shape:  (4312, 25000)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0 0 0 ... 0 0 0]  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (4312,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.0001922  for idx [0]
+
+Accessing Data for `line`:
+    - shape:  (4312, 25000)
+    - dtype:  uint16
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0 1 2 ... 0 0 0]  for idx [0]
+
+Accessing Data for `intensity`:
+    - shape:  (4312, 25000)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [3. 3. 3. ... 0. 0. 0.]  for idx [0]
+
+Accessing Data for `valid`:
+    - shape:  (4312, 1)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [13657]  for idx [0]
+
+Accessing Data for `time`:
+    - shape:  (4312, 25000)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [1.7277761e+18 1.7277761e+18 1.7277761e+18 ... 0.0000000e+00 0.0000000e+00
+ 0.0000000e+00]  for idx [0]
+
+Accessing Data for `points`:
+    - shape:  (4312, 25000, 3)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0.17  0.91  0.924]
+ [0.13  0.919 0.926]
+ [0.089 0.927 0.926]
+ ...
+ [0.    0.    0.   ]
+ [0.    0.    0.   ]
+ [0.    0.    0.   ]]  for idx [0]
+
+Attributes:
+    - description:      10Hz - Livox Mid360 non-repetitive LiDAR (mounted up-side-down)
+    - frame_id:      livox_lidar
+    - topic:      livox_points
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'livox_lidar', 'rotation': {'w': 0.9999743041039169, 'x': -0.006935301181255335, 'y': 0.0015623437878433857, 'z': -0.0009229362387923458}, 'translation': {'x': -0.30263164816469024, 'y': 0.04875595821861217, 'z': 0.1098417136717083}}
+--------------------------------------------
+
+Zarr group:  livox_points_undistorted
+
+Data Fields
+
+Accessing Data for `line`:
+    - shape:  (4312, 25000)
+    - dtype:  uint16
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0 1 2 ... 0 0 0]  for idx [0]
+
+Accessing Data for `intensity`:
+    - shape:  (4312, 25000)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [3. 3. 3. ... 0. 0. 0.]  for idx [0]
+
+Accessing Data for `valid`:
+    - shape:  (4312, 1)
+    - dtype:  uint32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [13657]  for idx [0]
+
+Accessing Data for `time`:
+    - shape:  (4312, 25000)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [1.7277761e+18 1.7277761e+18 1.7277761e+18 ... 0.0000000e+00 0.0000000e+00
+ 0.0000000e+00]  for idx [0]
+
+Accessing Data for `tag`:
+    - shape:  (4312, 25000)
+    - dtype:  uint8
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0 0 0 ... 0 0 0]  for idx [0]
+
+Accessing Data for `points`:
+    - shape:  (4312, 25000, 3)
+    - dtype:  float32
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0.17  0.91  0.924]
+ [0.13  0.919 0.926]
+ [0.089 0.927 0.926]
+ ...
+ [0.    0.    0.   ]
+ [0.    0.    0.   ]
+ [0.    0.    0.   ]]  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (4312,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  19965  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (4312,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.0001922  for idx [0]
+
+Attributes:
+    - description:      10Hz - Livox Mid360 non-repetitive LiDAR (mounted up-side-down)- undistorted using Leg Intgerial Odometry
+    - frame_id:      livox_lidar
+    - topic:      livox_points_undistorted
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'livox_lidar', 'rotation': {'w': 0.9999743041039169, 'x': -0.006935301181255335, 'y': 0.0015623437878433857, 'z': -0.0009229362387923458}, 'translation': {'x': -0.30263164816469024, 'y': 0.04875595821861217, 'z': 0.1098417136717083}}
+--------------------------------------------
+
+Zarr group:  prism_position
+
+Data Fields
+
+Accessing Data for `timestamp`:
+    - shape:  (4684,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776134.261006  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (4684,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0  for idx [0]
+
+Accessing Data for `point`:
+    - shape:  (4684, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-28.01252556  16.42165565  -0.09036256]  for idx [0]
+
+Attributes:
+    - description:      Position of prism relative to stationary Leica Geosystems MS60 Total Station.
+    - frame_id:      leica_total_station
+    - topic:      prism_position
+--------------------------------------------
+
+Zarr group:  stim320_accelerometer_temperature
+
+Data Fields
+
+Accessing Data for `var`:
+    - shape:  (209140,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (209140,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  44  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (209140,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776101.9943979  for idx [0]
+
+Accessing Data for `temp`:
+    - shape:  (209140,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  28.203125  for idx [0]
+
+Attributes:
+    - description:      STIM320 accelerometer temperature readings at 500Hz.
+    - frame_id:      stim320_imu
+    - topic:      stim320_accelerometer_temperature
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'stim320_imu', 'rotation': {'w': -0.005861732683034935, 'x': -0.999969253444768, 'y': -0.005117285966486087, 'z': 0.0009724399227390018}, 'translation': {'x': -0.28505604358365294, 'y': -0.07158336465343071, 'z': 0.15961588385259787}}
+--------------------------------------------
+
+Zarr group:  stim320_gyroscope_temperature
+
+Data Fields
+
+Accessing Data for `temp`:
+    - shape:  (209140,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  28.334635416666668  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (209140,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  44  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (209140,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776101.9943979  for idx [0]
+
+Accessing Data for `var`:
+    - shape:  (209140,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0.0  for idx [0]
+
+Attributes:
+    - description:      STIM320 gyroscope temperature readings at 500Hz.
+    - frame_id:      stim320_imu
+    - topic:      stim320_gyroscope_temperature
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'stim320_imu', 'rotation': {'w': -0.005861732683034935, 'x': -0.999969253444768, 'y': -0.005117285966486087, 'z': 0.0009724399227390018}, 'translation': {'x': -0.28505604358365294, 'y': -0.07158336465343071, 'z': 0.15961588385259787}}
+--------------------------------------------
+
+Zarr group:  stim320_imu
+
+Data Fields
+
+Accessing Data for `lin_acc_cov`:
+    - shape:  (209141, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[6.43229675e-06 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 6.43229675e-06 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 6.43229675e-06]]  for idx [0]
+
+Accessing Data for `orien`:
+    - shape:  (209141, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [0. 0. 0. 0.]  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (209141,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  44  for idx [0]
+
+Accessing Data for `ang_vel_cov`:
+    - shape:  (209141, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[4.04316981e-06 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.04316981e-06 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.04316981e-06]]  for idx [0]
+
+Accessing Data for `lin_acc`:
+    - shape:  (209141, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-0.13272855 -0.01417816  9.75281787]  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (209141,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.001319  for idx [0]
+
+Accessing Data for `ang_vel`:
+    - shape:  (209141, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-0.00216568 -0.00095448 -0.00100667]  for idx [0]
+
+Accessing Data for `orien_cov`:
+    - shape:  (209141, 3, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]  for idx [0]
+
+Attributes:
+    - description:      Safran STIM320 500Hz
+    - frame_id:      stim320_imu
+    - topic:      stim320_imu
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'stim320_imu', 'rotation': {'w': -0.005861732683034935, 'x': -0.999969253444768, 'y': -0.005117285966486087, 'z': 0.0009724399227390018}, 'translation': {'x': -0.28505604358365294, 'y': -0.07158336465343071, 'z': 0.15961588385259787}}
+--------------------------------------------
+
+Zarr group:  tf
+
+Data Fields
+
+Attributes:
+    - tf:      {'adis16475_imu': {'base_frame_id': 'box_base', 'child_frame_id': 'adis16475_imu', 'rotation': {'w': 0.005251232714324072, 'x': 0.7046754024829419, 'y': -0.7094799413019802, 'z': -0.006573779782016809}, 'translation': {'x': -0.015846751421098565, 'y': 0.19322607669094574, 'z': 0.07956850717224997}}, 'alphasense_base': {'base_frame_id': 'box_base', 'child_frame_id': 'alphasense_base', 'rotation': {'w': 0.541225186106887, 'x': -0.45494336062045815, 'y': -0.4544944669145965, 'z': -0.5417901956430607}, 'translation': {'x': 0.04600713143181777, 'y': -0.0032140911178705073, 'z': -0.3751986320280252}}, 'alphasense_front_center': {'base_frame_id': 'box_base', 'child_frame_id': 'alphasense_front_center', 'rotation': {'w': 0.541225186106887, 'x': -0.45494336062045815, 'y': -0.4544944669145965, 'z': -0.5417901956430607}, 'translation': {'x': 0.04600713143181777, 'y': -0.0032140911178705073, 'z': -0.3751986320280252}}, 'alphasense_front_left': {'base_frame_id': 'box_base', 'child_frame_id': 'alphasense_front_left', 'rotation': {'w': 0.5368758638762299, 'x': -0.45974498896225247, 'y': -0.45019665401233916, 'z': -0.5456389141431761}, 'translation': {'x': 0.10008743117500188, 'y': -0.005044106160423112, 'z': -0.3759478344493785}}, 'alphasense_front_right': {'base_frame_id': 'box_base', 'child_frame_id': 'alphasense_front_right', 'rotation': {'w': 0.5415552717416523, 'x': -0.45428021832487614, 'y': -0.45594501981218066, 'z': -0.5407971059426985}, 'translation': {'x': -0.008591409149567839, 'y': -0.004939215486247553, 'z': -0.3747769505103547}}, 'alphasense_imu': {'base_frame_id': 'box_base', 'child_frame_id': 'alphasense_imu', 'rotation': {'w': 0.9992675697949326, 'x': -0.00720142304148732, 'y': -0.036738890418011295, 'z': -0.007919431365965667}, 'translation': {'x': -0.3022307436356707, 'y': 0.061798150722505, 'z': -0.08410765585489798}}, 'alphasense_left': {'base_frame_id': 'box_base', 'child_frame_id': 'alphasense_left', 'rotation': {'w': 0.7629309956447421, 'x': -0.6464698403272188, 'y': 0.0035455747661431447, 'z': 0.0006858071159475156}, 'translation': {'x': -0.2991991707202636, 'y': -0.040493099699673664, 'z': -0.15557014858322163}}, 'alphasense_right': {'base_frame_id': 'box_base', 'child_frame_id': 'alphasense_right', 'rotation': {'w': 0.0024233744493068338, 'x': 0.007051890013999862, 'y': -0.6356317567377696, 'z': -0.7719563899145896}, 'translation': {'x': 0.3005096713964913, 'y': -0.05350472559028527, 'z': -0.06790435993644765}}, 'anymal_imu': {'base_frame_id': 'base', 'child_frame_id': 'anymal_imu', 'rotation': {'w': 3.749399456654644e-33, 'x': -6.123233995736766e-17, 'y': -1.0, 'z': -6.123233995736766e-17}, 'translation': {'x': -0.25565, 'y': -0.0025499999999999785, 'z': 0.07672}}, 'ap20_imu': {'base_frame_id': 'box_base', 'child_frame_id': 'ap20_imu', 'rotation': {'w': 0.7118234995434812, 'x': 0.7023441372038522, 'y': 0.002839101058711715, 'z': -0.003458025191722333}, 'translation': {'x': -0.0019815872862082684, 'y': 0.002909799597334762, 'z': 0.10495166375034842}}, 'box_base': {'base_frame_id': 'base', 'child_frame_id': 'box_base', 'rotation': {'w': 4.0026794885936924e-05, 'x': -0.9999999991989279, 'y': 0.0, 'z': 0.0}, 'translation': {'x': -0.0764038, 'y': -0.036122437224394885, 'z': 0.2802761091673168}}, 'cpt7_imu': {'base_frame_id': 'box_base', 'child_frame_id': 'cpt7_imu', 'rotation': {'w': 1.0, 'x': -0.0, 'y': -0.0, 'z': -0.0}, 'translation': {'x': 0.0, 'y': 0.0, 'z': 0.0}}, 'depth_camera_front_lower': {'base_frame_id': 'base', 'child_frame_id': 'depth_camera_front_lower', 'rotation': {'w': 0.1853242209410057, 'x': -0.682120823997394, 'y': -0.6827000055661541, 'z': -0.1851669976040512}, 'translation': {'x': 0.025244004785019813, 'y': -0.28748365097540396, 'z': -0.23806593024678288}}, 'depth_camera_front_upper': {'base_frame_id': 'base', 'child_frame_id': 'depth_camera_front_upper', 'rotation': {'w': 0.4306894486036953, 'x': -0.5608677721283586, 'y': -0.560580238989435, 'z': -0.43091035808363254}, 'translation': {'x': 0.024957449516778196, 'y': -0.0829849350915826, 'z': -0.3905787382352799}}, 'depth_camera_left': {'base_frame_id': 'base', 'child_frame_id': 'depth_camera_left', 'rotation': {'w': -0.40524782131784814, 'x': -0.9141898919041819, 'y': -0.0050937542777571565, 'z': -0.002257991301008538}, 'translation': {'x': 0.0242061858130713, 'y': 0.07137107769940886, 'z': -0.06013160430595553}}, 'depth_camera_rear_lower': {'base_frame_id': 'base', 'child_frame_id': 'depth_camera_rear_lower', 'rotation': {'w': -0.1818562220566243, 'x': 0.6753182459089098, 'y': -0.6923967447153604, 'z': -0.1773705983227687}, 'translation': {'x': 0.01771644477911219, 'y': -0.291914920763388, 'z': -0.2333051716531234}}, 'depth_camera_rear_upper': {'base_frame_id': 'base', 'child_frame_id': 'depth_camera_rear_upper', 'rotation': {'w': -0.4288525438138612, 'x': 0.5606297691810952, 'y': -0.567966630879787, 'z': -0.42331272574704876}, 'translation': {'x': 0.023834299957984015, 'y': -0.08981592717100904, 'z': -0.38913513060622656}}, 'depth_camera_right': {'base_frame_id': 'base', 'child_frame_id': 'depth_camera_right', 'rotation': {'w': 0.0020469741271627595, 'x': -0.004486598891874416, 'y': -0.9097731195609077, 'z': 0.41507656071105803}, 'translation': {'x': 0.025687060614725817, 'y': 0.06953460693100322, 'z': -0.06164976363236345}}, 'hdr_front': {'base_frame_id': 'box_base', 'child_frame_id': 'hdr_front', 'rotation': {'w': 0.4970495903927929, 'x': -0.499305922637098, 'y': -0.5005829735777374, 'z': -0.5030427286761467}, 'translation': {'x': 0.04836030494808155, 'y': -0.10282483832595525, 'z': -0.36926064730524666}}, 'hdr_left': {'base_frame_id': 'box_base', 'child_frame_id': 'hdr_left', 'rotation': {'w': 0.6981144475823984, 'x': -0.7106446365240748, 'y': 0.06071950908492229, 'z': 0.06271809844673303}, 'translation': {'x': -0.3123877547915767, 'y': -0.1040746815988313, 'z': -0.0946004294028184}}, 'hdr_right': {'base_frame_id': 'box_base', 'child_frame_id': 'hdr_right', 'rotation': {'w': -0.05968925863378414, 'x': 0.06271504848629056, 'y': -0.701622990300235, 'z': -0.7072688276598}, 'translation': {'x': 0.2984670188513917, 'y': -0.1021873680871323, 'z': -0.007282571655555148}}, 'hesai_lidar': {'base_frame_id': 'box_base', 'child_frame_id': 'hesai_lidar', 'rotation': {'w': -0.004419949690193552, 'x': -0.7093301791430758, 'y': 0.7048516039326548, 'z': 0.003921407292290494}, 'translation': {'x': -0.04461184951630229, 'y': 0.3022381420105506, 'z': -0.01253994548350209}}, 'livox_imu': {'base_frame_id': 'box_base', 'child_frame_id': 'livox_imu', 'rotation': {'w': 0.9999514279010147, 'x': -0.007862897821623277, 'y': 0.0001266741714154213, 'z': -0.005941433347507674}, 'translation': {'x': -0.309334506793968, 'y': 0.02772866572054537, 'z': 0.15059851991550668}}, 'livox_lidar': {'base_frame_id': 'box_base', 'child_frame_id': 'livox_lidar', 'rotation': {'w': 0.9999743041039169, 'x': -0.006935301181255335, 'y': 0.0015623437878433857, 'z': -0.0009229362387923458}, 'translation': {'x': -0.30263164816469024, 'y': 0.04875595821861217, 'z': 0.1098417136717083}}, 'stim320_imu': {'base_frame_id': 'box_base', 'child_frame_id': 'stim320_imu', 'rotation': {'w': -0.005861732683034935, 'x': -0.999969253444768, 'y': -0.005117285966486087, 'z': 0.0009724399227390018}, 'translation': {'x': -0.28505604358365294, 'y': -0.07158336465343071, 'z': 0.15961588385259787}}, 'velodyne_lidar': {'base_frame_id': 'base', 'child_frame_id': 'velodyne_lidar', 'rotation': {'w': 2.220446049250313e-16, 'x': 0.0, 'y': 0.0, 'z': -1.0}, 'translation': {'x': -0.31, 'y': -1.376676550535194e-16, 'z': -0.1585}}, 'zed2i_base': {'base_frame_id': 'box_base', 'child_frame_id': 'zed2i_base', 'rotation': {'w': 0.9962118648543207, 'x': -0.006581941621942168, 'y': 0.08669318635449509, 'z': -0.0016999434304889223}, 'translation': {'x': -0.40482353372271573, 'y': 0.047230058607942466, 'z': -0.06326319217368467}}, 'zed2i_left': {'base_frame_id': 'box_base', 'child_frame_id': 'zed2i_left', 'rotation': {'w': 0.5376457335765262, 'x': -0.4560279507472064, 'y': -0.45330473617163086, 'z': -0.5454267957009725}, 'translation': {'x': 0.10794130666130296, 'y': -0.07812765789668064, 'z': -0.3950964183927077}}, 'zed2i_right': {'base_frame_id': 'box_base', 'child_frame_id': 'zed2i_right', 'rotation': {'w': 0.5373115821826182, 'x': -0.45720033826192996, 'y': -0.4523183402260819, 'z': -0.5455934690231464}, 'translation': {'x': -0.012769940823864567, 'y': -0.07826319215076401, 'z': -0.39482353374563656}}}
+--------------------------------------------
+
+Zarr group:  zed2i_depth_confidence_image
+
+Data Fields
+
+Accessing Data for `sequence_id`:
+    - shape:  (6189,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (6189,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.022074  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [0.0, 0.0, 0.0, 0.0, 0.0], 'K': [1052.076416015625, 0.0, 956.3431396484375, 0.0, 1052.076416015625, 553.9560546875, 0.0, 0.0, 1.0], 'P': [1052.076416015625, 0.0, 956.3431396484375, 0.0, 0.0, 1052.076416015625, 553.9560546875, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'plumb_bob', 'frame_id': 'zed2i_right', 'height': 1080, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 1920}
+    - description:      15Hz - 1920x1080 - Stereolabs Zed2i - generated Stereolabs SDK 4.2 (mounted up-side-down / we flipped the naming of the left and right camera w.r.t. ZED2i driver).
+    - frame_id:      zed2i_right
+    - topic:      zed2i_depth_confidence_image
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'zed2i_right', 'rotation': {'w': 0.5373115821826182, 'x': -0.45720033826192996, 'y': -0.4523183402260819, 'z': -0.5455934690231464}, 'translation': {'x': -0.012769940823864567, 'y': -0.07826319215076401, 'z': -0.39482353374563656}}
+--------------------------------------------
+
+Zarr group:  zed2i_depth_image
+
+Data Fields
+
+Accessing Data for `timestamp`:
+    - shape:  (6189,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.022074  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (6189,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  544  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [0.0, 0.0, 0.0, 0.0, 0.0], 'K': [1052.076416015625, 0.0, 956.3431396484375, 0.0, 1052.076416015625, 553.9560546875, 0.0, 0.0, 1.0], 'P': [1052.076416015625, 0.0, 956.3431396484375, 0.0, 0.0, 1052.076416015625, 553.9560546875, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'plumb_bob', 'frame_id': 'zed2i_right', 'height': 1080, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 1920}
+    - description:      15Hz - 1920x1080 - Stereolabs Zed2i - generated Stereolabs SDK 4.2 (mounted up-side-down / we flipped the naming of the left and right camera w.r.t. ZED2i driver) - The depth images correspondes to the zed2i_right_images in our convention. Be aware that depth image and right camera image use different intrinsics. 
+    - frame_id:      zed2i_right
+    - topic:      zed2i_depth_image
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'zed2i_right', 'rotation': {'w': 0.5373115821826182, 'x': -0.45720033826192996, 'y': -0.4523183402260819, 'z': -0.5455934690231464}, 'translation': {'x': -0.012769940823864567, 'y': -0.07826319215076401, 'z': -0.39482353374563656}}
+--------------------------------------------
+
+Zarr group:  zed2i_left_images
+
+Data Fields
+
+Accessing Data for `sequence_id`:
+    - shape:  (6189,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  544  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (6189,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.022074  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [-0.06500657463932444, 0.0331724401464621, 0.0002780243674173525, -0.0002130544788201019], 'K': [1066.992160463982, 0.0, 964.8906181241582, 0.0, 1066.617034517532, 527.1921430815046, 0.0, 0.0, 1.0], 'P': [1066.992160463982, 0.0, 964.8906181241582, 0.0, 0.0, 1066.617034517532, 527.1921430815046, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'radtan', 'frame_id': 'zed2i_left', 'height': 1080, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 1920}
+    - description:      15Hz - 1920x1080 - Stereolabs Zed2i left (Color, 4MP, mounted up-side-down / we flipped the naming of the left and right camera w.r.t. ZED2i driver)
+    - frame_id:      zed2i_left
+    - topic:      zed2i_left_images
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'zed2i_left', 'rotation': {'w': 0.5376457335765262, 'x': -0.4560279507472064, 'y': -0.45330473617163086, 'z': -0.5454267957009725}, 'translation': {'x': 0.10794130666130296, 'y': -0.07812765789668064, 'z': -0.3950964183927077}}
+--------------------------------------------
+
+Zarr group:  zed2i_right_images
+
+Data Fields
+
+Accessing Data for `timestamp`:
+    - shape:  (6189,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.022074  for idx [0]
+
+Accessing Data for `sequence_id`:
+    - shape:  (6189,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  544  for idx [0]
+
+Attributes:
+    - camera_info:      {'D': [-0.06500657463932444, 0.0331724401464621, 0.0002780243674173525, -0.0002130544788201019], 'K': [1066.992160463982, 0.0, 964.8906181241582, 0.0, 1066.617034517532, 527.1921430815046, 0.0, 0.0, 1.0], 'P': [1066.992160463982, 0.0, 964.8906181241582, 0.0, 0.0, 1066.617034517532, 527.1921430815046, 0.0, 0.0, 0.0, 1.0, 0.0], 'R': [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0], 'binning_x': 0, 'binning_y': 0, 'distortion_model': 'radtan', 'frame_id': 'zed2i_left', 'height': 1080, 'roi': {'do_rectify': False, 'height': 0, 'width': 0, 'x_offset': 0, 'y_offset': 0}, 'width': 1920}
+    - description:      15Hz - 1920x1080 - Stereolabs Zed2i right (Color, 4MP, mounted up-side-down / we flipped the naming of the left and right camera w.r.t. ZED2i driver)
+    - frame_id:      zed2i_right
+    - topic:      zed2i_right_images
+    - transform:      {'base_frame_id': 'box_base', 'child_frame_id': 'zed2i_right', 'rotation': {'w': 0.5373115821826182, 'x': -0.45720033826192996, 'y': -0.4523183402260819, 'z': -0.5455934690231464}, 'translation': {'x': -0.012769940823864567, 'y': -0.07826319215076401, 'z': -0.39482353374563656}}
+--------------------------------------------
+
+Zarr group:  zed2i_vio_map
+
+Data Fields
+
+Accessing Data for `sequence_id`:
+    - shape:  (5420,)
+    - dtype:  uint64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  0  for idx [0]
+
+Accessing Data for `pose_orien`:
+    - shape:  (5420, 4)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [ 0.99539365 -0.01535556 -0.09460673 -0.00229436]  for idx [0]
+
+Accessing Data for `pose_pos`:
+    - shape:  (5420, 3)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [-0.01446256  0.01411864  0.4388314 ]  for idx [0]
+
+Accessing Data for `pose_cov`:
+    - shape:  (5420, 6, 6)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  [[ 1.72408542e-03 -2.96750804e-04  5.09435602e-04  7.29226158e-05
+   1.90905557e-04 -1.96847075e-04]
+ [-2.96750804e-04  1.13054365e-03 -1.87069367e-04  1.07728425e-04
+  -1.42113568e-04 -6.19086262e-04]
+ [ 5.09435602e-04 -1.87069367e-04  1.48220989e-03  1.27025240e-04
+   9.42211831e-04  5.24485185e-05]
+ [ 7.29226158e-05  1.07728454e-04  1.27025225e-04  1.52823888e-03
+  -3.81726393e-04 -3.87496344e-04]
+ [ 1.90905528e-04 -1.42113582e-04  9.42211947e-04 -3.81726393e-04
+   1.04890822e-03  1.91194165e-04]
+ [-1.96847061e-04 -6.19086262e-04  5.24485222e-05 -3.87496344e-04
+   1.91194180e-04  6.07225695e-04]]  for idx [0]
+
+Accessing Data for `timestamp`:
+    - shape:  (5420,)
+    - dtype:  float64
+    - type:   <class 'zarr.core.array.Array'>
+    - value:  1727776102.022074  for idx [0]
+
+Attributes:
+    - description:      VIO provided by Stereolabs SDK
+    - frame_id:      zed2i_map
+    - topic:      zed2i_vio_map
+--------------------------------------------

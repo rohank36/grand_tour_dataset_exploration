@@ -1,0 +1,209 @@
+Topic/Key: adis_imu
+   Data Fields:      ['ang_vel', 'ang_vel_cov', 'lin_acc', 'lin_acc_cov', 'orien', 'orien_cov', 'sequence_id', 'timestamp']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      Analog Devices ADIS16475-2 200Hz
+
+Topic/Key: alphasense_front_center
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      10Hz - 1440x1080 - Sevensense Alphasense/CoreResearch front center (Sony IMX-273, Color, 1.6MP)
+
+Topic/Key: alphasense_front_left
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      10Hz - 1440x1080 - Sevensense Alphasense/CoreResearch front left (Sony IMX-273, Mono, 1.6MP)
+
+Topic/Key: alphasense_front_right
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      10Hz - 1440x1080 - Sevensense Alphasense/CoreResearch front right (Sony IMX-273, Mono, 1.6MP)
+
+Topic/Key: alphasense_imu
+   Data Fields:      ['ang_vel', 'ang_vel_cov', 'lin_acc', 'lin_acc_cov', 'orien', 'orien_cov', 'sequence_id', 'timestamp']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      Bosch BMI085 200Hz (Integrated in Sevensense CoreResearch/Alphasense camera unit)
+
+Topic/Key: alphasense_left
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      10Hz - 1440x1080 - Sevensense Alphasense/CoreResearch left (Sony IMX-273, Color, 1.6MP)
+
+Topic/Key: alphasense_right
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      10Hz - 1440x1080 - Sevensense Alphasense/CoreResearch right (Sony IMX-273, Color, 1.6MP)
+
+Topic/Key: anymal_command_twist
+   Data Fields:      ['angular', 'linear', 'sequence_id', 'timestamp']
+   Data Attributes:  ['description', 'frame_id', 'topic']
+   Description:      Operator-issued twist command for ANYmal D.
+
+Topic/Key: anymal_imu
+   Data Fields:      ['ang_vel', 'ang_vel_cov', 'lin_acc', 'lin_acc_cov', 'orien', 'orien_cov', 'sequence_id', 'timestamp']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      Epsoon 400HZ (integrated in ANYbotics ANYmal D)
+
+Topic/Key: anymal_state_actuator
+   Data Fields:      ['00_command_current', '00_command_joint_torque', '00_command_mode', '00_command_pid_gains_d', '00_command_pid_gains_i', '00_command_pid_gains_p', '00_command_position', '00_command_velocity', '00_state_current', '00_state_gear_position', '00_state_gear_velocity', '00_state_imu_ang_vel', '00_state_imu_ang_vel_cov', '00_state_imu_lin_acc', '00_state_imu_lin_acc_cov', '00_state_imu_orien', '00_state_imu_orien_cov', '00_state_joint_acceleration', '00_state_joint_position', '00_state_joint_torque', '00_state_joint_velocity', '00_state_statusword', '01_command_current', '01_command_joint_torque', '01_command_mode', '01_command_pid_gains_d', '01_command_pid_gains_i', '01_command_pid_gains_p', '01_command_position', '01_command_velocity', '01_state_current', '01_state_gear_position', '01_state_gear_velocity', '01_state_imu_ang_vel', '01_state_imu_ang_vel_cov', '01_state_imu_lin_acc', '01_state_imu_lin_acc_cov', '01_state_imu_orien', '01_state_imu_orien_cov', '01_state_joint_acceleration', '01_state_joint_position', '01_state_joint_torque', '01_state_joint_velocity', '01_state_statusword', '02_command_current', '02_command_joint_torque', '02_command_mode', '02_command_pid_gains_d', '02_command_pid_gains_i', '02_command_pid_gains_p', '02_command_position', '02_command_velocity', '02_state_current', '02_state_gear_position', '02_state_gear_velocity', '02_state_imu_ang_vel', '02_state_imu_ang_vel_cov', '02_state_imu_lin_acc', '02_state_imu_lin_acc_cov', '02_state_imu_orien', '02_state_imu_orien_cov', '02_state_joint_acceleration', '02_state_joint_position', '02_state_joint_torque', '02_state_joint_velocity', '02_state_statusword', '03_command_current', '03_command_joint_torque', '03_command_mode', '03_command_pid_gains_d', '03_command_pid_gains_i', '03_command_pid_gains_p', '03_command_position', '03_command_velocity', '03_state_current', '03_state_gear_position', '03_state_gear_velocity', '03_state_imu_ang_vel', '03_state_imu_ang_vel_cov', '03_state_imu_lin_acc', '03_state_imu_lin_acc_cov', '03_state_imu_orien', '03_state_imu_orien_cov', '03_state_joint_acceleration', '03_state_joint_position', '03_state_joint_torque', '03_state_joint_velocity', '03_state_statusword', '04_command_current', '04_command_joint_torque', '04_command_mode', '04_command_pid_gains_d', '04_command_pid_gains_i', '04_command_pid_gains_p', '04_command_position', '04_command_velocity', '04_state_current', '04_state_gear_position', '04_state_gear_velocity', '04_state_imu_ang_vel', '04_state_imu_ang_vel_cov', '04_state_imu_lin_acc', '04_state_imu_lin_acc_cov', '04_state_imu_orien', '04_state_imu_orien_cov', '04_state_joint_acceleration', '04_state_joint_position', '04_state_joint_torque', '04_state_joint_velocity', '04_state_statusword', '05_command_current', '05_command_joint_torque', '05_command_mode', '05_command_pid_gains_d', '05_command_pid_gains_i', '05_command_pid_gains_p', '05_command_position', '05_command_velocity', '05_state_current', '05_state_gear_position', '05_state_gear_velocity', '05_state_imu_ang_vel', '05_state_imu_ang_vel_cov', '05_state_imu_lin_acc', '05_state_imu_lin_acc_cov', '05_state_imu_orien', '05_state_imu_orien_cov', '05_state_joint_acceleration', '05_state_joint_position', '05_state_joint_torque', '05_state_joint_velocity', '05_state_statusword', '06_command_current', '06_command_joint_torque', '06_command_mode', '06_command_pid_gains_d', '06_command_pid_gains_i', '06_command_pid_gains_p', '06_command_position', '06_command_velocity', '06_state_current', '06_state_gear_position', '06_state_gear_velocity', '06_state_imu_ang_vel', '06_state_imu_ang_vel_cov', '06_state_imu_lin_acc', '06_state_imu_lin_acc_cov', '06_state_imu_orien', '06_state_imu_orien_cov', '06_state_joint_acceleration', '06_state_joint_position', '06_state_joint_torque', '06_state_joint_velocity', '06_state_statusword', '07_command_current', '07_command_joint_torque', '07_command_mode', '07_command_pid_gains_d', '07_command_pid_gains_i', '07_command_pid_gains_p', '07_command_position', '07_command_velocity', '07_state_current', '07_state_gear_position', '07_state_gear_velocity', '07_state_imu_ang_vel', '07_state_imu_ang_vel_cov', '07_state_imu_lin_acc', '07_state_imu_lin_acc_cov', '07_state_imu_orien', '07_state_imu_orien_cov', '07_state_joint_acceleration', '07_state_joint_position', '07_state_joint_torque', '07_state_joint_velocity', '07_state_statusword', '08_command_current', '08_command_joint_torque', '08_command_mode', '08_command_pid_gains_d', '08_command_pid_gains_i', '08_command_pid_gains_p', '08_command_position', '08_command_velocity', '08_state_current', '08_state_gear_position', '08_state_gear_velocity', '08_state_imu_ang_vel', '08_state_imu_ang_vel_cov', '08_state_imu_lin_acc', '08_state_imu_lin_acc_cov', '08_state_imu_orien', '08_state_imu_orien_cov', '08_state_joint_acceleration', '08_state_joint_position', '08_state_joint_torque', '08_state_joint_velocity', '08_state_statusword', '09_command_current', '09_command_joint_torque', '09_command_mode', '09_command_pid_gains_d', '09_command_pid_gains_i', '09_command_pid_gains_p', '09_command_position', '09_command_velocity', '09_state_current', '09_state_gear_position', '09_state_gear_velocity', '09_state_imu_ang_vel', '09_state_imu_ang_vel_cov', '09_state_imu_lin_acc', '09_state_imu_lin_acc_cov', '09_state_imu_orien', '09_state_imu_orien_cov', '09_state_joint_acceleration', '09_state_joint_position', '09_state_joint_torque', '09_state_joint_velocity', '09_state_statusword', '10_command_current', '10_command_joint_torque', '10_command_mode', '10_command_pid_gains_d', '10_command_pid_gains_i', '10_command_pid_gains_p', '10_command_position', '10_command_velocity', '10_state_current', '10_state_gear_position', '10_state_gear_velocity', '10_state_imu_ang_vel', '10_state_imu_ang_vel_cov', '10_state_imu_lin_acc', '10_state_imu_lin_acc_cov', '10_state_imu_orien', '10_state_imu_orien_cov', '10_state_joint_acceleration', '10_state_joint_position', '10_state_joint_torque', '10_state_joint_velocity', '10_state_statusword', '11_command_current', '11_command_joint_torque', '11_command_mode', '11_command_pid_gains_d', '11_command_pid_gains_i', '11_command_pid_gains_p', '11_command_position', '11_command_velocity', '11_state_current', '11_state_gear_position', '11_state_gear_velocity', '11_state_imu_ang_vel', '11_state_imu_ang_vel_cov', '11_state_imu_lin_acc', '11_state_imu_lin_acc_cov', '11_state_imu_orien', '11_state_imu_orien_cov', '11_state_joint_acceleration', '11_state_joint_position', '11_state_joint_torque', '11_state_joint_velocity', '11_state_statusword', 'sequence_id', 'timestamp']
+   Data Attributes:  ['description', 'frame_id', 'topic']
+   Description:      ANYmal Joint State provide by ANYbotics. Feet Names 0-3: ['LF_FOOT', 'RF_FOOT', 'LH_FOOT', 'RH_FOOT']. Joint Naming 0-11: ['LF_HAA', 'LF_HFE', 'LF_KFE', 'RF_HAA', 'RF_HFE', 'RF_KFE', 'LH_HAA', 'LH_HFE', 'LH_KFE', 'RH_HAA', 'RH_HFE', 'RH_KFE']
+
+Topic/Key: anymal_state_battery
+   Data Fields:      ['battery_status', 'bms_temperature', 'cell_temperature', 'current', 'fet_temperature', 'health_status', 'humidity', 'is_connected', 'pressure', 'safety_status', 'sequence_id', 'state_of_charge', 'status', 'timestamp', 'voltage']
+   Data Attributes:  ['description', 'frame_id', 'topic']
+   Description:      ANYmal D battery state readings.
+
+Topic/Key: anymal_state_odometry
+   Data Fields:      ['pose_cov', 'pose_orien', 'pose_pos', 'sequence_id', 'timestamp', 'twist_ang', 'twist_cov', 'twist_lin']
+   Data Attributes:  ['description', 'frame_id', 'topic']
+   Description:      ANYmal leg inertial odometry solution.
+
+Topic/Key: anymal_state_state_estimator
+   Data Fields:      ['LF_FOOT_contact', 'LF_FOOT_friction_coef', 'LF_FOOT_normal', 'LF_FOOT_restitution_coef', 'LF_FOOT_state', 'LF_FOOT_wrench_force', 'LF_FOOT_wrench_torque', 'LH_FOOT_contact', 'LH_FOOT_friction_coef', 'LH_FOOT_normal', 'LH_FOOT_restitution_coef', 'LH_FOOT_state', 'LH_FOOT_wrench_force', 'LH_FOOT_wrench_torque', 'RF_FOOT_contact', 'RF_FOOT_friction_coef', 'RF_FOOT_normal', 'RF_FOOT_restitution_coef', 'RF_FOOT_state', 'RF_FOOT_wrench_force', 'RF_FOOT_wrench_torque', 'RH_FOOT_contact', 'RH_FOOT_friction_coef', 'RH_FOOT_normal', 'RH_FOOT_restitution_coef', 'RH_FOOT_state', 'RH_FOOT_wrench_force', 'RH_FOOT_wrench_torque', 'joint_accelerations', 'joint_efforts', 'joint_positions', 'joint_velocities', 'pose_orien', 'pose_pos', 'sequence_id', 'timestamp', 'twist_ang', 'twist_lin']
+   Data Attributes:  ['description', 'frame_id', 'topic']
+   Description:      ANYmal full state provided by ANYbotics. Feet Names 0-3: ['LF_FOOT', 'RF_FOOT', 'LH_FOOT', 'RH_FOOT']. Joint Naming 0-11: ['LF_HAA', 'LF_HFE', 'LF_KFE', 'RF_HAA', 'RF_HFE', 'RF_KFE', 'LH_HAA', 'LH_HFE', 'LH_KFE', 'RH_HAA', 'RH_HFE', 'RH_KFE']
+
+Topic/Key: ap20_imu
+   Data Fields:      ['ang_vel', 'ang_vel_cov', 'lin_acc', 'lin_acc_cov', 'orien', 'orien_cov', 'sequence_id', 'timestamp']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      Leica Geosystems AP20 200Hz (data is only available while the bluetooth conntetion to the MS60 is active)
+
+Topic/Key: cpt7_imu
+   Data Fields:      ['ang_vel', 'ang_vel_cov', 'lin_acc', 'lin_acc_cov', 'orien', 'orien_cov', 'sequence_id', 'timestamp']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      Honeywell HG4930 100Hz (integrated in Novatel CPT7)
+
+Topic/Key: depth_camera_front_upper
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      15Hz - 848x480 - IntelRealsense D435i front upper (Integrated in ANYbotics ANYmal D)
+
+Topic/Key: depth_camera_left
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      15Hz - 848x480 - IntelRealsense D435i left (Integrated in ANYbotics ANYmal D)
+
+Topic/Key: depth_camera_rear_upper
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      15Hz - 848x480 - IntelRealsense D435i rear upper (Integrated in ANYbotics ANYmal D)
+
+Topic/Key: depth_camera_right
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      15Hz - 848x480 - IntelRealsense D435i right (Integrated in ANYbotics ANYmal D)
+
+Topic/Key: dlio_hesai_points_undistorted
+   Data Fields:      ['intensity', 'points', 'sequence_id', 'time', 'timestamp', 'valid']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      10Hz - Hesai XT-32 - undistorted using Direct LiDAR Interial Odometry (DLIO)
+
+Topic/Key: dlio_map_odometry
+   Data Fields:      ['pose_cov', 'pose_orien', 'pose_pos', 'sequence_id', 'timestamp', 'twist_ang', 'twist_cov', 'twist_lin']
+   Data Attributes:  ['description', 'frame_id', 'topic']
+   Description:      Direct LiDAR Interial Odometry (DLIO) using Hesai XT32 LiDAR and Honeywell HG4930 IMU.
+
+Topic/Key: dlio_tf
+   Data Fields:      ['rotation', 'sequence_id', 'timestamp', 'translation']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      Direct LiDAR Interial Odometry (DLIO) using Hesai XT32 LiDAR and Honeywell HG4930.
+
+Topic/Key: hdr_front
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      10Hz - 1920x1280 - TierIV C1 front (120dB, Color, 2.5MP)
+
+Topic/Key: hdr_left
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      10Hz - 1920x1280 - TierIV C1 left (120dB, Color, 2.5MP)
+
+Topic/Key: hdr_right
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      10Hz - 1920x1280 - TierIV C1 right (120dB, Color, 2.5MP)
+
+Topic/Key: hesai
+   Data Fields:      ['intensity', 'points', 'ring', 'sequence_id', 'time', 'timestamp', 'valid']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      10Hz - Hesai XT-32
+
+Topic/Key: hesai_points
+   Data Fields:      ['intensity', 'points', 'ring', 'sequence_id', 'time', 'timestamp', 'valid']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      10Hz - Hesai XT-32
+
+Topic/Key: hesai_points_undistorted
+   Data Fields:      ['intensity', 'points', 'ring', 'sequence_id', 'time', 'timestamp', 'valid']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      10Hz - Hesai XT-32 - undistorted using Leg Interial Odometry
+
+Topic/Key: hesai_undistorted
+   Data Fields:      ['intensity', 'points', 'ring', 'sequence_id', 'time', 'timestamp', 'valid']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      10Hz - Hesai XT-32 - undistorted using Leg Interial Odometry
+
+Topic/Key: livox_imu
+   Data Fields:      ['ang_vel', 'ang_vel_cov', 'lin_acc', 'lin_acc_cov', 'orien', 'orien_cov', 'sequence_id', 'timestamp']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      TDK ICM40609 200Hz (integrated in Livox Mid360)
+
+Topic/Key: livox_points
+   Data Fields:      ['intensity', 'line', 'points', 'sequence_id', 'tag', 'time', 'timestamp', 'valid']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      10Hz - Livox Mid360 non-repetitive LiDAR (mounted up-side-down)
+
+Topic/Key: livox_points_undistorted
+   Data Fields:      ['intensity', 'line', 'points', 'sequence_id', 'tag', 'time', 'timestamp', 'valid']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      10Hz - Livox Mid360 non-repetitive LiDAR (mounted up-side-down)- undistorted using Leg Intgerial Odometry
+
+Topic/Key: prism_position
+   Data Fields:      ['point', 'sequence_id', 'timestamp']
+   Data Attributes:  ['description', 'frame_id', 'topic']
+   Description:      Position of prism relative to stationary Leica Geosystems MS60 Total Station.
+
+Topic/Key: stim320_accelerometer_temperature
+   Data Fields:      ['sequence_id', 'temp', 'timestamp', 'var']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      STIM320 accelerometer temperature readings at 500Hz.
+
+Topic/Key: stim320_gyroscope_temperature
+   Data Fields:      ['sequence_id', 'temp', 'timestamp', 'var']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      STIM320 gyroscope temperature readings at 500Hz.
+
+Topic/Key: stim320_imu
+   Data Fields:      ['ang_vel', 'ang_vel_cov', 'lin_acc', 'lin_acc_cov', 'orien', 'orien_cov', 'sequence_id', 'timestamp']
+   Data Attributes:  ['description', 'frame_id', 'topic', 'transform']
+   Description:      Safran STIM320 500Hz
+
+Topic/Key: tf
+   Data Fields:      []
+   Data Attributes:  ['tf']
+Topic/Key: zed2i_depth_confidence_image
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      15Hz - 1920x1080 - Stereolabs Zed2i - generated Stereolabs SDK 4.2 (mounted up-side-down / we flipped the naming of the left and right camera w.r.t. ZED2i driver).
+
+Topic/Key: zed2i_depth_image
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      15Hz - 1920x1080 - Stereolabs Zed2i - generated Stereolabs SDK 4.2 (mounted up-side-down / we flipped the naming of the left and right camera w.r.t. ZED2i driver) - The depth images correspondes to the zed2i_right_images in our convention. Be aware that depth image and right camera image use different intrinsics. 
+
+Topic/Key: zed2i_left_images
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      15Hz - 1920x1080 - Stereolabs Zed2i left (Color, 4MP, mounted up-side-down / we flipped the naming of the left and right camera w.r.t. ZED2i driver)
+
+Topic/Key: zed2i_right_images
+   Data Fields:      ['sequence_id', 'timestamp']
+   Data Attributes:  ['camera_info', 'description', 'frame_id', 'topic', 'transform']
+   Description:      15Hz - 1920x1080 - Stereolabs Zed2i right (Color, 4MP, mounted up-side-down / we flipped the naming of the left and right camera w.r.t. ZED2i driver)
+
+Topic/Key: zed2i_vio_map
+   Data Fields:      ['pose_cov', 'pose_orien', 'pose_pos', 'sequence_id', 'timestamp']
+   Data Attributes:  ['description', 'frame_id', 'topic']
+   Description:      VIO provided by Stereolabs SDK
+
+Bad Keys: ['tf']
