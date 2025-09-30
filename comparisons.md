@@ -113,3 +113,38 @@
 1. **Terrain sampler:** LiDAR → base-frame point cloud → rolling 2.5D height map → sample 108 fixed offsets around the base each step.  
 2. **Gravity estimator:** Smooth IMU accel and/or use orientation to extract gravity vector; validate against estimator pose if available.  
 3. **Noise calibration:** Estimate per-channel σ from empirical residuals (encoders vs actuator state, IMU vs odom, odom vs CPT7 IE) and configure ISAAC sim-to-real noise to match.  
+
+
+# Mission Comparison: Unique Data Fields
+
+This report highlights the **topics/fields present in one mission but absent in the other**.
+
+---
+
+## ✅ Present in Mission A (2024-10-01-11-29-55) but Missing in Mission B (2024-10-01-11-47-44)
+
+- **cpt7_ie_rt_odometry**
+- **cpt7_ie_rt_tf**
+- **cpt7_ie_tc_odometry**
+- **cpt7_ie_tc_tf**
+- **gnss_raw_cpt7_ie_rt**
+- **gnss_raw_cpt7_ie_tc**
+- **navsatfix_cpt7_ie_tc**
+- **hesai_points_undistorted_filtered**
+- **livox_points_undistorted_filtered**
+
+These are mostly **GNSS / tightly coupled odometry topics** and some **filtered LiDAR variants**, available only in Mission A.
+
+---
+
+## ✅ Present in Mission B (2024-10-01-11-47-44) but Missing in Mission A (2024-10-01-11-29-55)
+
+- *(No additional GNSS/odometry streams found)*  
+- The datasets are otherwise nearly identical, except that Mission B **does not include** the GNSS-derived and filtered LiDAR fields above.
+
+---
+
+## 📝 Summary
+
+- **Mission A (11-29-55)** includes **extra GNSS and filtered LiDAR data**: tightly/loosely coupled CPT7 IE odometry, GNSS raw/RT, and navsatfix fields.  
+- **Mission B (11-47-44)** is missing those, but otherwise aligns closely in core sensors (IMUs, cameras, depth, LiDAR raw, actuator states, etc.).
