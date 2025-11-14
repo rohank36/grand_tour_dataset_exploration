@@ -4,6 +4,7 @@ import zarr
 warnings.filterwarnings('ignore')
 import numpy as np
 from reward import compute_rewards_offline
+import h5py
 
 
 def _to_np(x):
@@ -122,7 +123,180 @@ TARGET_HZ = 50.0
 DT = 1.0 / TARGET_HZ
 aligned = {}
 
+idx = 1
 for mission in missions:
+
+    print(f"Aligning {mission} ({idx}/{len(missions)})")
+
     mission_folder = dataset_folder / mission
     mission_root = zarr.open_group(store=mission_folder / "data", mode='r')
-    aligned_tmp = align_mission_to_50hz(mission_root, topics, DT, TARGET_HZ)
+
+    if idx == 0:
+        # init aligned data 
+        aligned = align_mission_to_50hz(mission_root, topics, DT, TARGET_HZ)
+
+    else:
+        # build aligned data 
+        aligned_tmp = align_mission_to_50hz(mission_root, topics, DT, TARGET_HZ)
+        for k in list(aligned_tmp["sensors"].keys()):
+            for k2 in list(aligned_tmp["sensors"][k].keys()):
+                aligned["sensors"][k][k2] = np.concatenate((aligned["sensors"][k][k2], aligned_tmp["sensors"][k][k2]), axis=0)
+
+    if idx == 2: break # JUST FOR TESTING
+
+    idx += 1
+
+print("\nAlignment done.\n")
+
+output_file = "aligned_dataset_shapes.txt"
+
+with open(output_file, "w") as f:
+    for sensor in topics:
+        f.write(f"{sensor}:\n")
+        keys = sorted(aligned["sensors"][sensor].keys())
+        for key in keys:
+            shape = aligned["sensors"][sensor][key].shape
+            dtype = type(aligned["sensors"][sensor][key])
+            f.write(f"-->    {key} {shape} {dtype}\n")
+        f.write("------------------------------\n\n")
+
+print(f"Sensor info written to {output_file}")
+
+# build offline rl dataset 
+
+def get_axis_params(value, axis_idx):
+    axis = np.zeros(3)
+    axis[axis_idx] = value
+    return axis
+
+def quat_rotate_inverse(q, v):
+    """
+    Rotate vector(s) v by the inverse of quaternion(s) q.
+    q: (..., 4) array [x, y, z, w]
+    v: (..., 3) array
+    returns: rotated v in same shape
+    """
+    q = np.asarray(q)
+    v = np.asarray(v)
+
+    q_vec = q[..., :3]         # (x, y, z)
+    q_w = q[..., 3]            # w
+    t = 2.0 * np.cross(q_vec, v)
+    return v - q_w[..., None] * t + np.cross(q_vec, t)
+
+def build_offline_dataset(data, episode_len_s=20, hz=50):
+    """Convert aligned ANYmal sensor data into offline RL dataset."""
+
+    est = data["sensors"]["anymal_state_state_estimator"]
+    act = data["sensors"]["anymal_state_actuator"]
+    cmd = data["sensors"]["anymal_command_twist"]
+    imu = data["sensors"]["anymal_imu"]
+
+    up_axis_idx = 2 # 2 for z, 1 for y -> adapt gravity accordingly
+    gravity_vec = get_axis_params(-1., up_axis_idx)
+    base_quat =  imu["orien"] # assumes quaternion that rotates body --> world 
+    projected_gravity = quat_rotate_inverse(base_quat, gravity_vec) # (T,4)
+
+    base_lin_vel = est["twist_lin"]          # (T, 3)
+    base_ang_vel = est["twist_ang"]          # (T, 3)
+    joint_pos = est["joint_positions"]       # (T, 12)
+    joint_vel = est["joint_velocities"]      # (T, 12)
+    cmd_lin = cmd["linear"]                  # (T, 3)
+    cmd_ang = cmd["angular"]                 # (T, 3)
+
+    act_keys = [f"{i:02d}_command_position" for i in range(12)]
+    actions = np.stack([act[k] for k in act_keys], axis=-1)   # (T, 12)
+
+    prev_actions = np.zeros_like(actions)
+    prev_actions[1:] = actions[:-1]
+
+    obs = np.concatenate([
+        base_lin_vel,
+        base_ang_vel,
+        projected_gravity,
+        joint_pos,
+        joint_vel,
+        prev_actions,       
+        cmd_lin,
+        cmd_ang,
+    ], axis=-1)  # (T, obs_dim)
+    
+    rews = compute_rewards_offline(
+        base_ang_vel,
+        base_lin_vel,
+        prev_actions,
+        actions,
+        joint_vel,
+        est["LF_FOOT_contact"],
+        est["LH_FOOT_contact"],
+        est["RF_FOOT_contact"],
+        est["RH_FOOT_contact"],
+        cmd_lin,
+        cmd_ang,
+        est["joint_efforts"],
+        len(obs)
+    )
+
+    # Shift for next_observations 
+    observations = obs[:-1]
+    next_observations = obs[1:]
+    actions = actions[:-1]
+    rewards = rews[:-1]
+
+    # Terminals every 20s (20s * 50hz = 1000 steps)
+    T = len(observations)
+    episode_len = int(episode_len_s * hz)
+    terminals = np.zeros(T, dtype=bool)
+    terminals[np.arange(episode_len - 1, T, episode_len)] = True
+
+
+    # offline dataset 
+    dataset = dict(
+        observations=observations,
+        actions=actions,
+        next_observations=next_observations,
+        rewards=rewards,
+        terminals=terminals,
+    )
+
+    return dataset
+
+def save_offline_dataset_hdf5(dataset, filename="offline_dataset.hdf5"):
+    with h5py.File(filename, "w") as f:
+        for key, arr in dataset.items():
+            print(f"Saving {key}: {arr.shape} {arr.dtype}")
+            f.create_dataset(
+                name=key,
+                data=arr,
+                compression="gzip",
+                compression_opts=4,   
+                chunks=True           
+            )
+    print(f"Saved dataset to {filename}\n")
+
+print("\nBuilding Offline Dataset...")
+dataset = build_offline_dataset(aligned)
+save_offline_dataset_hdf5(dataset)
+
+def episode_returns(rewards, terminals):
+    episode_sums = []
+    current_sum = 0.0
+
+    for r, done in zip(rewards, terminals):
+        current_sum += r
+        if done:
+            episode_sums.append(current_sum)
+            current_sum = 0.0
+
+    if not terminals[-1]:
+        episode_sums.append(current_sum)
+
+    return np.array(episode_sums)
+
+
+for k in list(dataset.keys()):
+    print(f"{k}: {type(dataset[k])} {dataset[k].shape}")
+
+ep_ret = episode_returns(dataset["rewards"], dataset["terminals"])
+print(f"Total episodes: {len(ep_ret)}")
+print(f"Median Episode Return: {np.median(ep_ret)}")
