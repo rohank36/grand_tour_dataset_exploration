@@ -131,7 +131,7 @@ for mission in missions:
     mission_folder = dataset_folder / mission
     mission_root = zarr.open_group(store=mission_folder / "data", mode='r')
 
-    if idx == 0:
+    if idx == 1:
         # init aligned data 
         aligned = align_mission_to_50hz(mission_root, topics, DT, TARGET_HZ)
 
@@ -141,8 +141,6 @@ for mission in missions:
         for k in list(aligned_tmp["sensors"].keys()):
             for k2 in list(aligned_tmp["sensors"][k].keys()):
                 aligned["sensors"][k][k2] = np.concatenate((aligned["sensors"][k][k2], aligned_tmp["sensors"][k][k2]), axis=0)
-
-    if idx == 2: break # JUST FOR TESTING
 
     idx += 1
 
