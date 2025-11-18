@@ -4,3 +4,4 @@
 /venv
 /__pycache__
 /offline_dataset*
+/test.py
