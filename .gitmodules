@@ -1,3 +1,0 @@
-[submodule "legged_gym"]
-	path = legged_gym
-	url = https://github.com/modanesh/legged_gym_anymal_d
