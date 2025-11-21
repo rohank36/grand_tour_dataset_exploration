@@ -8,14 +8,19 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple, Union
 
-import d4rl
-import gym
+#import d4rl
+#import gym
+import h5py
 import numpy as np
 import pyrallis
+
+import wandb
+
+from eval_isaac import eval_actor_isaac
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import wandb
 from torch.distributions import Normal, TanhTransform, TransformedDistribution
 
 TensorBatch = List[torch.Tensor]
@@ -24,7 +29,7 @@ TensorBatch = List[torch.Tensor]
 @dataclass
 class TrainConfig:
     device: str = "cuda"
-    env: str = "halfcheetah-medium-expert-v2"  # OpenAI gym environment name
+    #env: str = "halfcheetah-medium-expert-v2"  # OpenAI gym environment name
     seed: int = 0  # Sets Gym, PyTorch and Numpy seeds
     eval_freq: int = int(5e3)  # How often (time steps) we evaluate
     n_episodes: int = 10  # How many episodes run during evaluation
@@ -58,12 +63,17 @@ class TrainConfig:
     reward_scale: float = 5.0  # Reward scale for normalization
     reward_bias: float = -1.0  # Reward bias for normalization
     policy_log_std_multiplier: float = 1.0  # Stochastic policy std multiplier
-    project: str = "CORL"  # wandb project name
-    group: str = "CQL-D4RL"  # wandb group name
-    name: str = "CQL"  # wandb run name
+    
+    project: str = "grand_tour"  # wandb project name
+    group: str = "CQL"  # wandb group name
+    name: str = "CQL-pp"  # wandb run name
+    #project: str = "CORL"  # wandb project name
+    #group: str = "CQL-D4RL"  # wandb group name
+    #name: str = "CQL"  # wandb run name
 
     def __post_init__(self):
-        self.name = f"{self.name}-{self.env}-{str(uuid.uuid4())[:8]}"
+        #self.name = f"{self.name}-{self.env}-{str(uuid.uuid4())[:8]}"
+        self.name = f"{self.name}-{str(uuid.uuid4())[:8]}"
         if self.checkpoints_path is not None:
             self.checkpoints_path = os.path.join(self.checkpoints_path, self.name)
 
@@ -82,7 +92,7 @@ def compute_mean_std(states: np.ndarray, eps: float) -> Tuple[np.ndarray, np.nda
 def normalize_states(states: np.ndarray, mean: np.ndarray, std: np.ndarray):
     return (states - mean) / std
 
-
+"""
 def wrap_env(
     env: gym.Env,
     state_mean: Union[np.ndarray, float] = 0.0,
@@ -103,6 +113,19 @@ def wrap_env(
     if reward_scale != 1.0:
         env = gym.wrappers.TransformReward(env, scale_reward)
     return env
+
+"""
+
+def load_hdf5_dataset(path: str) -> Dict[str, np.ndarray]:
+    with h5py.File(path, "r") as f:
+        dataset = {
+            "observations":      f["observations"][()],
+            "next_observations": f["next_observations"][()],
+            "actions":           f["actions"][()],
+            "rewards":           f["rewards"][()],
+            "terminals":         f["terminals"][()],
+        }
+    return dataset
 
 
 class ReplayBuffer:
@@ -166,7 +189,7 @@ class ReplayBuffer:
         # I left it unimplemented since now we do not do fine-tuning.
         raise NotImplementedError
 
-
+"""
 def set_seed(
     seed: int, env: Optional[gym.Env] = None, deterministic_torch: bool = False
 ):
@@ -178,6 +201,7 @@ def set_seed(
     random.seed(seed)
     torch.manual_seed(seed)
     torch.use_deterministic_algorithms(deterministic_torch)
+"""
 
 
 def wandb_init(config: dict) -> None:
@@ -191,6 +215,7 @@ def wandb_init(config: dict) -> None:
     wandb.run.save()
 
 
+"""
 @torch.no_grad()
 def eval_actor(
     env: gym.Env, actor: nn.Module, device: str, n_episodes: int, seed: int
@@ -209,6 +234,17 @@ def eval_actor(
 
     actor.train()
     return np.asarray(episode_rewards)
+"""
+
+"""
+@torch.no_grad()
+def eval_actor_isaac(
+    actor: nn.Module,
+    device: str,
+    n_episodes: int,
+) -> np.ndarray:
+    raise NotImplementedError
+"""
 
 
 def return_reward_range(dataset: Dict, max_episode_steps: int) -> Tuple[float, float]:
@@ -372,6 +408,12 @@ class TanhGaussianPolicy(nn.Module):
         with torch.no_grad():
             actions, _ = self(state, not self.training)
         return actions.cpu().data.numpy().flatten()
+    
+    @torch.no_grad()
+    def act_inference(self, observations: torch.Tensor) -> torch.Tensor:
+        with torch.no_grad():
+            actions, _ = self(observations, deterministic=True)  # deterministic = True for eval
+        return actions
 
 
 class FullyConnectedQFunction(nn.Module):
@@ -826,12 +868,18 @@ class ContinuousCQL:
 
 @pyrallis.wrap()
 def train(config: TrainConfig):
-    env = gym.make(config.env)
+    #env = gym.make(config.env)
+    #state_dim = env.observation_space.shape[0]
+    #action_dim = env.action_space.shape[0]
 
-    state_dim = env.observation_space.shape[0]
-    action_dim = env.action_space.shape[0]
+    env = None
 
-    dataset = d4rl.qlearning_dataset(env)
+    #dataset = d4rl.qlearning_dataset(env)
+    dataset_path = "offline_dataset.hdf5"
+    dataset = load_hdf5_dataset(dataset_path)
+
+    state_dim = dataset["observations"].shape[1]
+    action_dim = dataset["actions"].shape[1]
 
     if config.normalize_reward:
         modify_reward(
@@ -852,7 +900,7 @@ def train(config: TrainConfig):
     dataset["next_observations"] = normalize_states(
         dataset["next_observations"], state_mean, state_std
     )
-    env = wrap_env(env, state_mean=state_mean, state_std=state_std)
+    #env = wrap_env(env, state_mean=state_mean, state_std=state_std)
     replay_buffer = ReplayBuffer(
         state_dim,
         action_dim,
@@ -861,7 +909,9 @@ def train(config: TrainConfig):
     )
     replay_buffer.load_d4rl_dataset(dataset)
 
-    max_action = float(env.action_space.high[0])
+    #max_action = float(env.action_space.high[0])
+    max_action = float(np.max(np.abs(dataset["actions"])))
+
 
     if config.checkpoints_path is not None:
         print(f"Checkpoints path: {config.checkpoints_path}")
@@ -871,7 +921,7 @@ def train(config: TrainConfig):
 
     # Set seeds
     seed = config.seed
-    set_seed(seed, env)
+    #set_seed(seed, env)
 
     critic_1 = FullyConnectedQFunction(
         state_dim,
@@ -905,7 +955,8 @@ def train(config: TrainConfig):
         "soft_target_update_rate": config.soft_target_update_rate,
         "device": config.device,
         # CQL
-        "target_entropy": -np.prod(env.action_space.shape).item(),
+        #"target_entropy": -np.prod(env.action_space.shape).item(),
+        "target_entropy": -np.prod(dataset["actions"].shape).item(),
         "alpha_multiplier": config.alpha_multiplier,
         "use_automatic_entropy_tuning": config.use_automatic_entropy_tuning,
         "backup_entropy": config.backup_entropy,
@@ -925,7 +976,8 @@ def train(config: TrainConfig):
     }
 
     print("---------------------------------------")
-    print(f"Training CQL, Env: {config.env}, Seed: {seed}")
+    #print(f"Training CQL, Env: {config.env}, Seed: {seed}")
+    print(f"Training CQL")
     print("---------------------------------------")
 
     # Initialize actor
@@ -936,17 +988,18 @@ def train(config: TrainConfig):
         trainer.load_state_dict(torch.load(policy_file))
         actor = trainer.actor
 
-    wandb_init(asdict(config))
+    #wandb_init(asdict(config))
 
     evaluations = []
     for t in range(int(config.max_timesteps)):
         batch = replay_buffer.sample(config.batch_size)
         batch = [b.to(config.device) for b in batch]
         log_dict = trainer.train(batch)
-        wandb.log(log_dict, step=trainer.total_it)
+        #wandb.log(log_dict, step=trainer.total_it)
         # Evaluate episode
         if (t + 1) % config.eval_freq == 0:
             print(f"Time steps: {t + 1}")
+            """
             eval_scores = eval_actor(
                 env,
                 actor,
@@ -954,13 +1007,31 @@ def train(config: TrainConfig):
                 n_episodes=config.n_episodes,
                 seed=config.seed,
             )
+            """
+            eval_scores = eval_actor_isaac(
+                                            actor=actor,
+                                            task_name="anymal_c_flat",
+                                            num_envs=1,
+                                            n_episodes=config.n_episodes,
+                                            seed = 27,
+                                            device=config.device,
+                                            headless=True,
+                                            record=False,
+                                            move_camera=False
+                                        )
             eval_score = eval_scores.mean()
-            normalized_eval_score = env.get_normalized_score(eval_score) * 100.0
-            evaluations.append(normalized_eval_score)
+            #normalized_eval_score = env.get_normalized_score(eval_score) * 100.0
+            #evaluations.append(normalized_eval_score)
+            evaluations.append(eval_score)
             print("---------------------------------------")
+            """
             print(
                 f"Evaluation over {config.n_episodes} episodes: "
                 f"{eval_score:.3f} , D4RL score: {normalized_eval_score:.3f}"
+            )
+            """
+            print(
+                f"Evaluation over {config.n_episodes} episodes: {eval_score:.3f} "
             )
             print("---------------------------------------")
             if config.checkpoints_path:
@@ -968,10 +1039,14 @@ def train(config: TrainConfig):
                     trainer.state_dict(),
                     os.path.join(config.checkpoints_path, f"checkpoint_{t}.pt"),
                 )
+            """
+            # TODO: ONCE CODE IS FULLY DEBUGEED THEN UNCOMMENT ALL WANDB TO LOG PROPERLY
             wandb.log(
-                {"d4rl_normalized_score": normalized_eval_score},
+                #{"d4rl_normalized_score": normalized_eval_score},
+                {"isaac_reward": eval_score},
                 step=trainer.total_it,
             )
+            """
 
 
 if __name__ == "__main__":
